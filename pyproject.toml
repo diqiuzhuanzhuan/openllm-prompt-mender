@@ -1,7 +1,7 @@
 [project]
 name = "openllm-prompt-mender"
 version = "0.1.0"
-description = "Python Boilerplate contains all the boilerplate you need to create a Python package."
+description = "A framework ultilized for prompt tuning."
 readme = "README.md"
 authors = [
   {name = "Loong Ma", email = "diqiuzhuanzhuan@gmail.com"}
@@ -33,7 +33,7 @@ changelog = "https://github.com/diqiuzhuanzhuan/openllm-prompt-mender/blob/maste
 homepage = "https://github.com/diqiuzhuanzhuan/openllm-prompt-mender"
 
 [project.scripts]
-openllm-prompt-mender = "openllm-prompt-mender.cli:app"
+openllm-prompt-mender = "openllm_prompt_mender.cli:app"
 
 [tool.ty]
 # All rules are enabled as "error" by default; no need to specify unless overriding.
