@@ -14,7 +14,8 @@ classifiers = [
 ]
 license = {text = "MIT"}
 dependencies = [
-  "typer"
+  "dspy>=3.0.4",
+  "typer",
 ]
 requires-python = ">= 3.10"
 
