@@ -23,6 +23,8 @@
 import dspy
 from typing import List
 from dotenv import load_dotenv
+from google_cse import GoogleCSE
+import random
 import os
 from datasets import load_dataset
 from openllm_prompt_mender.utils.data_utils import load_trainset, save_trainset
@@ -59,11 +61,10 @@ class GoogleRAg(dspy.Module):
                 for generating answers with citations.
         """
         super().__init__(callbacks)
-        self.retrieve = dspy.Retrieve(k=10)
         self.generate_answer = dspy.ChainOfThought(WebRAGWithCitations)
 
 
-    def forward(self, question):
+    def forward(self, question, context):
         """Process a question by retrieving relevant context and generating an answer.
 
         Args:
@@ -74,7 +75,6 @@ class GoogleRAg(dspy.Module):
                 - context (list): The retrieved context passages relevant to the question.
                 - answer (str): The generated answer to the question based on the context.
         """
-        context = self.retrieve(question).passages
         prediction = self.generate_answer(context=context, question=question)
         return dspy.Prediction(context=context, answer=prediction.answer)
    
@@ -92,7 +92,7 @@ class AssessQuality(dspy.Signature):
     answer = dspy.InputField(desc="The generated response to be assessed")
     
     # Evaluation outcomes
-    is_grounded = dspy.OutputField(desc="Boolean indicating if the answer is supported by the context", type_=bool)
+    is_grounded = dspy.OutputField(desc="Rate the answer on a scale from 0 to 1 according to its degree of alignment with the query", type_=float)
     language_match = dspy.OutputField(desc="Boolean indicating if the output language aligns with the question", type_=bool)
     citation_correct = dspy.OutputField(desc="Boolean indicating if [[id]] tags are present and accurate", type_=bool)
     rationale = dspy.OutputField(desc="Textual explanation for the given assessment scores") 
@@ -112,13 +112,16 @@ def llm_judge_metric(example, pred, trace=None):
             question=example.question, 
             answer=pred.answer
         )
+        if assessment.language_match != "True":
+            print("question: ", example.question)
+            print("answer: ", pred.answer)
         
     # Calculate the average score from the boolean criteria [4, 5]
     # Each True counts as 1.0, False counts as 0.0
     total_score = (
         float(assessment.is_grounded) + 
-        float(assessment.language_match) + 
-        float(assessment.citation_correct)
+        float(bool(assessment.language_match) == 'True') + 
+        float(bool(assessment.citation_correct) == 'True')
     ) / 3.0
     
     # Return a Prediction object which can include both the numeric score and feedback [4]
@@ -132,17 +135,16 @@ from dspy.teleprompt import MIPROv2
 
 tp = MIPROv2(
     metric=llm_judge_metric, 
-    auto="light", 
+    auto="light",  # auto can be set as light, medium, heavy
     prompt_model=judge_lm, 
     teacher_settings=dict(lm=judge_lm)
-    ) # auto can be set as light, medium, heavy
+)
 
     
 def build_trainset(queries: List[str]):
     trainset = []
-    import random
-    from google_cse import GoogleCSE
-    print(os.environ["GOOGLE_CSE_API_KEY"])
+    # must set GOOGLE_CSE_API_KEY and GOOGLE_CSE_CX in .env
+    assert os.environ["GOOGLE_CSE_API_KEY"] is not None
     google_client = GoogleCSE(
         api_key=os.environ["GOOGLE_CSE_API_KEY"],
         search_engine_id=os.environ["GOOGLE_CSE_CX"],
@@ -151,12 +153,13 @@ def build_trainset(queries: List[str]):
     for i in range(len(queries)):
         n = random.randint(1, 10)
         question = queries[i]
-        search_results = google_client.web_search(question, num_results=n)
+        try:
+            search_results = google_client.web_search(question, num_results=n)
+        except Exception as e:
+            print(e)
+            break
         context = "\n".join([f"{i + 1}. {result.snippet}" for i, result in enumerate(search_results)])
-        print(context)
         trainset.append(dspy.Example(question=question, context=context).with_inputs("question", "context"))
-        import time
-        time.sleep(5)
     return trainset
 
 
@@ -179,7 +182,14 @@ else:
     save_trainset(trainset, "data/trainset.jsonl")
 
 
-#compiled_program = tp.compile(GoogleRAg, trainset=dspy.Example(
-#
-#))
+compiled_program = tp.compile(GoogleRAg(), trainset=trainset)
 
+pred = compiled_program(
+    question=trainset[45].question,
+    context=trainset[45].context
+)
+import pprint
+pprint.pprint(pred.answer)
+pprint.pprint("#"*300)
+for message in dspy.clients.base_lm.GLOBAL_HISTORY[-1]["messages"]:
+    pprint.pprint(message)
