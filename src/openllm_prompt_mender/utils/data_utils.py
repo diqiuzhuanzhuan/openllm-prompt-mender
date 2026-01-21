@@ -21,6 +21,7 @@
 # SOFTWARE.
 
 import json
+import random
 import dspy
 from typing import List
 
@@ -43,4 +44,6 @@ def load_trainset(file_path: str, input_keys: tuple=("question", "context")) -> 
             # Use .with_inputs() to specify which fields are inputs [4, 5]
             example = dspy.Example(**data).with_inputs(*input_keys)
             loaded_data.append(example)
+            random.shuffle(loaded_data)
+
     return loaded_data

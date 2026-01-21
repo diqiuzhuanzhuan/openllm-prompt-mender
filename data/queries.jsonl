@@ -1,0 +1,190 @@
+{"query":"北京今天的天气如何","category":"weather"}
+{"query":"上海未来三天天气预报","category":"weather"}
+{"query":"广州今天会下雨吗","category":"weather"}
+{"query":"台风最新路径查询","category":"weather"}
+{"query":"当前空气质量指数 AQI","category":"weather"}
+{"query":"weather in New York today","category":"weather"}
+{"query":"London weather forecast tomorrow","category":"weather"}
+{"query":"weekly weather outlook in Tokyo","category":"weather"}
+{"query":"heatwave warning in Europe","category":"weather"}
+{"query":"snowfall forecast for Chicago","category":"weather"}
+{"query":"台北未来一周天气","category":"weather"}
+{"query":"深圳高温预警","category":"weather"}
+{"query":"气象局最新暴雨通知","category":"weather"}
+{"query":"weather alert near my location","category":"weather"}
+{"query":"humidity level in Singapore","category":"weather"}
+{"query":"北京雾霾情况实时","category":"weather"}
+{"query":"typhoon tracking Japan","category":"weather"}
+{"query":"weather radar Texas","category":"weather"}
+{"query":"海上天气预报","category":"weather"}
+{"query":"极端天气最新新闻","category":"weather"}
+{"query":"特斯拉今天股价","category":"finance"}
+{"query":"苹果公司股票实时行情","category":"finance"}
+{"query":"英伟达股价走势","category":"finance"}
+{"query":"上证指数今日行情","category":"finance"}
+{"query":"恒生指数最新情况","category":"finance"}
+{"query":"Bitcoin price today","category":"finance"}
+{"query":"Ethereum price prediction","category":"finance"}
+{"query":"gold price per ounce today","category":"finance"}
+{"query":"USD to CNY exchange rate","category":"finance"}
+{"query":"Federal Reserve interest rate decision","category":"finance"}
+{"query":"A股市场今日涨跌原因","category":"finance"}
+{"query":"美股盘前行情","category":"finance"}
+{"query":"最新CPI数据","category":"finance"}
+{"query":"通胀率最新报告","category":"finance"}
+{"query":"Tesla earnings call summary","category":"finance"}
+{"query":"AI概念股有哪些","category":"finance"}
+{"query":"新能源板块行情","category":"finance"}
+{"query":"房贷利率最新政策","category":"finance"}
+{"query":"全球经济衰退风险","category":"finance"}
+{"query":"stock market volatility index VIX","category":"finance"}
+{"query":"今日国际新闻头条","category":"news"}
+{"query":"中国最新政策解读","category":"policy"}
+{"query":"美国大选最新进展","category":"news"}
+{"query":"中美关系最新动态","category":"news"}
+{"query":"欧洲经济新闻","category":"news"}
+{"query":"breaking news today","category":"news"}
+{"query":"latest global headlines","category":"news"}
+{"query":"technology news today","category":"news"}
+{"query":"AI regulation latest update","category":"policy"}
+{"query":"climate change policy news","category":"policy"}
+{"query":"科技公司裁员新闻","category":"news"}
+{"query":"人工智能最新突破","category":"tech"}
+{"query":"大模型相关行业新闻","category":"tech"}
+{"query":"OpenAI 最新动态","category":"tech"}
+{"query":"自动驾驶最新消息","category":"tech"}
+{"query":"国际冲突最新进展","category":"news"}
+{"query":"能源危机相关新闻","category":"news"}
+{"query":"全球通胀新闻","category":"news"}
+{"query":"网络安全重大事件","category":"tech"}
+{"query":"数字货币监管新闻","category":"policy"}
+{"query":"最新大模型排行榜","category":"tech"}
+{"query":"GPT 和 Gemini 的区别","category":"tech"}
+{"query":"Qwen 模型能力介绍","category":"tech"}
+{"query":"开源大模型有哪些","category":"tech"}
+{"query":"AI Agent 最新进展","category":"tech"}
+{"query":"LLM tool calling examples","category":"tech"}
+{"query":"multimodal model benchmark","category":"tech"}
+{"query":"llama.cpp 最新更新","category":"tech"}
+{"query":"Ollama 使用教程","category":"tech"}
+{"query":"vLLM 推理性能对比","category":"tech"}
+{"query":"大模型推理成本分析","category":"tech"}
+{"query":"RAG 技术最佳实践","category":"tech"}
+{"query":"向量数据库对比","category":"tech"}
+{"query":"AI 搜索引擎推荐","category":"tech"}
+{"query":"自动化 Agent 框架","category":"tech"}
+{"query":"reinforcement learning for LLM","category":"tech"}
+{"query":"AI hallucination mitigation","category":"tech"}
+{"query":"多模态模型评测","category":"tech"}
+{"query":"AI 产品落地案例","category":"tech"}
+{"query":"prompt engineering best practices","category":"tech"}
+{"query":"今日足球比赛结果","category":"sports"}
+{"query":"NBA 最新赛况","category":"sports"}
+{"query":"世界杯预选赛赛程","category":"sports"}
+{"query":"奥运会最新消息","category":"sports"}
+{"query":"梅西最新动态","category":"sports"}
+{"query":"movie box office today","category":"entertainment"}
+{"query":"upcoming movie releases","category":"entertainment"}
+{"query":"Netflix trending shows","category":"entertainment"}
+{"query":"最新电视剧推荐","category":"entertainment"}
+{"query":"热门综艺节目","category":"entertainment"}
+{"query":"今日油价查询","category":"life"}
+{"query":"高铁晚点情况查询","category":"life"}
+{"query":"附近餐厅推荐","category":"life"}
+{"query":"城市交通拥堵情况","category":"life"}
+{"query":"出国签证最新政策","category":"policy"}
+{"query":"旅游天气建议","category":"life"}
+{"query":"健康饮食建议","category":"life"}
+{"query":"房价走势分析","category":"life"}
+{"query":"租房市场行情","category":"life"}
+{"query":"生活成本对比城市","category":"life"}
+{"query":"Wetter heute in Berlin","category":"weather"}
+{"query":"Wettervorhersage München morgen","category":"weather"}
+{"query":"Wetter Frankfurt diese Woche","category":"weather"}
+{"query":"今日の東京の天気","category":"weather"}
+{"query":"明日の大阪の天気予報","category":"weather"}
+{"query":"北海道 天気 週間予報","category":"weather"}
+{"query":"Hamburg Regenwahrscheinlichkeit","category":"weather"}
+{"query":"Köln Temperatur aktuell","category":"weather"}
+{"query":"名古屋 天気 明日","category":"weather"}
+{"query":"福岡 天気 今日","category":"weather"}
+{"query":"Aktueller Aktienkurs von SAP","category":"stock"}
+{"query":"Siemens Aktie heute","category":"stock"}
+{"query":"BMW Aktienanalyse","category":"stock"}
+{"query":"DAX Index aktuell","category":"stock"}
+{"query":"NASDAQ heute","category":"stock"}
+{"query":"トヨタ 株価 現在","category":"stock"}
+{"query":"ソニー 株価 推移","category":"stock"}
+{"query":"日経平均株価 今日","category":"stock"}
+{"query":"TOPIX 指数 最新","category":"stock"}
+{"query":"米国株 市場 動向","category":"stock"}
+{"query":"Neueste Nachrichten aus Deutschland","category":"news"}
+{"query":"Politische Nachrichten EU heute","category":"news"}
+{"query":"Wirtschaftsnachrichten Europa","category":"news"}
+{"query":"日本の最新ニュース","category":"news"}
+{"query":"国際ニュース 日本語","category":"news"}
+{"query":"アメリカ 大統領 選挙 ニュース","category":"news"}
+{"query":"Ukraine Krieg aktuelle Lage","category":"news"}
+{"query":"中東 情勢 最新","category":"news"}
+{"query":"Technologie Nachrichten heute","category":"news"}
+{"query":"AI News Deutschland","category":"news"}
+{"query":"Flugstatus Lufthansa heute","category":"travel"}
+{"query":"Flughafen Frankfurt Abflug","category":"travel"}
+{"query":"Zugverspätung Deutsche Bahn","category":"travel"}
+{"query":"ANA フライト 状況","category":"travel"}
+{"query":"JAL 遅延 情報","category":"travel"}
+{"query":"新幹線 運行情報 今日","category":"travel"}
+{"query":"Berlin Hotel Preise","category":"travel"}
+{"query":"東京 ホテル 相場","category":"travel"}
+{"query":"京都 観光 おすすめ","category":"travel"}
+{"query":"ヨーロッパ 旅行 ベスト シーズン","category":"travel"}
+{"query":"Inflationsrate Deutschland 2025","category":"economy"}
+{"query":"EZB Leitzins aktuell","category":"economy"}
+{"query":"Arbeitslosenquote Deutschland","category":"economy"}
+{"query":"日本のインフレ率 最新","category":"economy"}
+{"query":"日銀 金利 政策","category":"economy"}
+{"query":"円安 原因 分析","category":"economy"}
+{"query":"EU Wirtschaft Prognose","category":"economy"}
+{"query":"中国 経済 成長率","category":"economy"}
+{"query":"生活成本对比城市","category":"life"}
+{"query":"房价走势分析","category":"life"}
+{"query":"Was ist künstliche Intelligenz","category":"knowledge"}
+{"query":"Definition von Large Language Models","category":"knowledge"}
+{"query":"RAG Architektur Erklärung","category":"knowledge"}
+{"query":"人工知能とは何か","category":"knowledge"}
+{"query":"大規模言語モデル 仕組み","category":"knowledge"}
+{"query":"検索拡張生成 RAG","category":"knowledge"}
+{"query":"Prompt Engineering Grundlagen","category":"knowledge"}
+{"query":"Transformer Modell Erklärung","category":"knowledge"}
+{"query":"因果推論 基本 概念","category":"knowledge"}
+{"query":"强化学习 原理","category":"knowledge"}
+{"query":"Neue Apple Produkte 2025","category":"technology"}
+{"query":"KI Trends 2025","category":"technology"}
+{"query":"OpenAI 最新 モデル","category":"technology"}
+{"query":"Apple 新製品 発表","category":"technology"}
+{"query":"半導体 市場 動向","category":"technology"}
+{"query":"量子コンピュータ 現状","category":"technology"}
+{"query":"Cloud Computing Trends","category":"technology"}
+{"query":"Datenschutz KI Systeme","category":"technology"}
+{"query":"自动驾驶 技术 进展","category":"technology"}
+{"query":"机器人 技术 发展","category":"technology"}
+{"query":"Bundesliga Ergebnisse heute","category":"sports"}
+{"query":"Champions League Spielplan","category":"sports"}
+{"query":"FC Bayern Spiel Ergebnis","category":"sports"}
+{"query":"Jリーグ 試合結果","category":"sports"}
+{"query":"日本代表 サッカー 試合","category":"sports"}
+{"query":"オリンピック 日本 メダル","category":"sports"}
+{"query":"NBA Ergebnisse heute","category":"sports"}
+{"query":"F1 Rennen Ergebnis","category":"sports"}
+{"query":"网球 大满贯 赛程","category":"sports"}
+{"query":"马拉松 训练 建议","category":"sports"}
+{"query":"Bitcoin Preis aktuell","category":"crypto"}
+{"query":"Ethereum Kurs Euro","category":"crypto"}
+{"query":"Krypto Markt Analyse","category":"crypto"}
+{"query":"ビットコイン 価格 現在","category":"crypto"}
+{"query":"イーサリアム 将来 予測","category":"crypto"}
+{"query":"DeFi プロジェクト 解説","category":"crypto"}
+{"query":"NFT 市場 動向","category":"crypto"}
+{"query":"区块链 技术 应用","category":"crypto"}
+{"query":"Web3 概念 解释","category":"crypto"}
+{"query":"稳定币 风险","category":"crypto"}

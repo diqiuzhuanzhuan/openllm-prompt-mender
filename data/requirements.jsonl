@@ -1,0 +1,524 @@
+{"requirements":"会议场景，结构清晰，要点化，管理层用", "lang": "zh"}
+{"requirements":"周会，简明，总结要点", "lang": "zh"}
+{"requirements":"项目会议，行动项清单", "lang": "zh"}
+{"requirements":"评审会议，结论优先", "lang": "zh"}
+{"requirements":"产品规划，路线图视角","lang":"zh"}
+{"requirements":"需求讨论，背景-方案","lang":"zh"}
+{"requirements":"技术会议，技术要点","lang":"zh"}
+{"requirements":"技术评审，优缺点","lang":"zh"}
+{"requirements":"技术讨论，结论+待办","lang":"zh"}
+{"requirements":"技术分享，知识点","lang":"zh"}
+{"requirements":"研发会议，问题列表","lang":"zh"}
+{"requirements":"架构讨论，关键决策","lang":"zh"}
+{"requirements":"学术讨论，逻辑严谨","lang":"zh"}
+{"requirements":"研究会议，假设与结论","lang":"zh"}
+{"requirements":"课堂讲解，知识梳理","lang":"zh"}
+{"requirements":"教学复盘，重点回顾","lang":"zh"}
+{"requirements":"培训场景，新人友好","lang":"zh"}
+{"requirements":"内部分享，通俗解释","lang":"zh"}
+{"requirements":"科普风格，非专业","lang":"zh"}
+{"requirements":"轻松风格，易读","lang":"zh"}
+{"requirements":"正式风格，对外使用","lang":"zh"}
+{"requirements":"商务场景，专业表达","lang":"zh"}
+{"requirements":"管理汇报，高层阅读","lang":"zh"}
+{"requirements":"老板汇报，结论先行","lang":"zh"}
+{"requirements":"跨部门会议，对齐信息","lang":"zh"}
+{"requirements":"远程会议，讨论摘要","lang":"zh"}
+{"requirements":"运营会议，数据导向","lang":"zh"}
+{"requirements":"市场讨论，趋势总结","lang":"zh"}
+{"requirements":"销售会议，客户反馈","lang":"zh"}
+{"requirements":"咨询场景，问题-建议","lang":"zh"}
+{"requirements":"决策会议，选项对比","lang":"zh"}
+{"requirements":"评估会议，风险点","lang":"zh"}
+{"requirements":"工作日志，日常记录","lang":"zh"}
+{"requirements":"个人语音，反思总结","lang":"zh"}
+{"requirements":"灵感记录，快速整理","lang":"zh"}
+{"requirements":"随手记录，结构模板","lang":"zh"}
+{"requirements":"通用模板，可复用","lang":"zh"}
+{"requirements":"简短模板，快速填写","lang":"zh"}
+{"requirements":"详细模板，全信息","lang":"zh"}
+{"requirements":"条目式，bullet points","lang":"zh"}
+{"requirements":"表格式结构","lang":"zh"}
+{"requirements":"固定字段模板","lang":"zh"}
+{"requirements":"行动导向，下一步","lang":"zh"}
+{"requirements":"问题导向，待解决","lang":"zh"}
+{"requirements":"结论导向，核心观点","lang":"zh"}
+{"requirements":"过程记录，讨论经过","lang":"zh"}
+{"requirements":"对外同步，清晰表达","lang":"zh"}
+{"requirements":"内部记录，不用修辞","lang":"zh"}
+{"requirements":"技术同学阅读","lang":"zh"}
+{"requirements":"非技术同学阅读","lang":"zh"}
+{"requirements":"管理+执行双视角","lang":"zh"}
+{"requirements":"会议纪要风格","lang":"zh"}
+{"requirements":"结论导向，核心观点", "lang": "zh"}
+{"requirements":"过程记录，讨论经过", "lang": "zh"}
+{"requirements":"对外同步，清晰表达", "lang": "zh"}
+{"requirements":"内部记录，不用修辞", "lang": "zh"}
+{"requirements":"技术同学阅读", "lang": "zh"}
+{"requirements":"非技术同学阅读", "lang": "zh"}
+{"requirements":"管理+执行双视角", "lang": "zh"}
+{"requirements":"会议纪要风格", "lang": "zh"}
+{"requirements":"Meeting scenario, clear structure, bullet points, for executives", "lang": "en"}
+{"requirements":"Weekly meeting, concise, key takeaways", "lang": "en"}
+{"requirements":"Project meeting, action item list", "lang": "en"}
+{"requirements":"Review meeting, conclusions first", "lang": "en"}
+{"requirements":"Product planning, roadmap perspective", "lang": "en"}
+{"requirements":"Requirements discussion, background and solutions", "lang": "en"}
+{"requirements":"Technical meeting, technical highlights", "lang": "en"}
+{"requirements":"Technical review, pros and cons", "lang": "en"}
+{"requirements":"Technical discussion, conclusions and to-dos", "lang": "en"}
+{"requirements":"Technical sharing session, key knowledge points", "lang": "en"}
+{"requirements":"R&D meeting, list of issues", "lang": "en"}
+{"requirements":"Architecture discussion, key decisions", "lang": "en"}
+{"requirements":"Academic discussion, rigorous logic", "lang": "en"}
+{"requirements":"Research meeting, hypotheses and conclusions", "lang": "en"}
+{"requirements":"Classroom lecture, knowledge structuring", "lang": "en"}
+{"requirements":"Teaching retrospective, key points review", "lang": "en"}
+{"requirements":"Training scenario, beginner-friendly", "lang": "en"}
+{"requirements":"Internal sharing, plain-language explanations", "lang": "en"}
+{"requirements":"Popular science style, non-technical audience", "lang": "en"}
+{"requirements":"Light tone, easy to read", "lang": "en"}
+{"requirements":"Formal tone, for external use", "lang": "en"}
+{"requirements":"Business scenario, professional language", "lang": "en"}
+{"requirements":"Management briefing, for senior leadership", "lang": "en"}
+{"requirements":"Executive update, conclusions first", "lang": "en"}
+{"requirements":"Cross-functional meeting, information alignment", "lang": "en"}
+{"requirements":"Remote meeting, discussion summary", "lang": "en"}
+{"requirements":"Operations meeting, data-driven", "lang": "en"}
+{"requirements":"Marketing discussion, trend summary", "lang": "en"}
+{"requirements":"Sales meeting, customer feedback", "lang": "en"}
+{"requirements":"Consulting scenario, problems and recommendations", "lang": "en"}
+{"requirements":"Decision meeting, option comparison", "lang": "en"}
+{"requirements":"Evaluation meeting, risk points", "lang": "en"}
+{"requirements":"Work log, daily record", "lang": "en"}
+{"requirements":"Personal voice memo, reflective summary", "lang": "en"}
+{"requirements":"Idea capture, quick organization", "lang": "en"}
+{"requirements":"Quick notes, structured template", "lang": "en"}
+{"requirements":"Generic template, reusable", "lang": "en"}
+{"requirements":"Short template, quick to fill in", "lang": "en"}
+{"requirements":"Detailed template, full information", "lang": "en"}
+{"requirements":"Bullet-point format", "lang": "en"}
+{"requirements":"Table-based structure", "lang": "en"}
+{"requirements":"Fixed-field template", "lang": "en"}
+{"requirements":"Action-oriented, next steps", "lang": "en"}
+{"requirements":"Problem-oriented, open issues", "lang": "en"}
+{"requirements":"Conclusion-driven, core viewpoints", "lang": "en"}
+{"requirements":"Process record, discussion flow", "lang": "en"}
+{"requirements":"External sync, clear communication", "lang": "en"}
+{"requirements":"Internal record, no rhetorical polish needed", "lang": "en"}
+{"requirements":"For technical audience", "lang": "en"}
+{"requirements":"For non-technical audience", "lang": "en"}
+{"requirements":"Dual perspective: management and execution", "lang": "en"}
+{"requirements":"Meeting minutes style", "lang": "en"}
+{"requirements":"Conclusion-driven, core viewpoints", "lang": "en"}
+{"requirements":"Process record, discussion flow", "lang": "en"}
+{"requirements":"External sync, clear communication", "lang": "en"}
+{"requirements":"Internal record, no rhetorical polish needed", "lang": "en"}
+{"requirements":"For technical audience", "lang": "en"}
+{"requirements":"For non-technical audience", "lang": "en"}
+{"requirements":"Dual perspective: management and execution", "lang": "en"}
+{"requirements":"Meeting minutes style", "lang": "en"}
+{"requirements":"Meeting-Szenario, klare Struktur, Stichpunkte, für das Management", "lang": "de"}
+{"requirements":"Wöchentliches Meeting, kurz und prägnant, wichtigste Punkte", "lang": "de"}
+{"requirements":"Projektmeeting, Aufgaben- und Aktionsliste", "lang": "de"}
+{"requirements":"Review-Meeting, Ergebnisse zuerst", "lang": "de"}
+{"requirements":"Produktplanung, Roadmap-Perspektive", "lang": "de"}
+{"requirements":"Anforderungsdiskussion, Hintergrund und Lösungsansätze", "lang": "de"}
+{"requirements":"Technisches Meeting, technische Kernpunkte", "lang": "de"}
+{"requirements":"Technisches Review, Vor- und Nachteile", "lang": "de"}
+{"requirements":"Technische Diskussion, Ergebnisse und To-dos", "lang": "de"}
+{"requirements":"Technischer Austausch, zentrale Wissenspunkte", "lang": "de"}
+{"requirements":"F&E-Meeting, Problemliste", "lang": "de"}
+{"requirements":"Architekturdiskussion, zentrale Entscheidungen", "lang": "de"}
+{"requirements":"Akademische Diskussion, stringente Logik", "lang": "de"}
+{"requirements":"Forschungsmeeting, Hypothesen und Schlussfolgerungen", "lang": "de"}
+{"requirements":"Unterrichtssituation, Wissensstrukturierung", "lang": "de"}
+{"requirements":"Lehr-Review, Wiederholung der Kernpunkte", "lang": "de"}
+{"requirements":"Schulungsszenario, anfängerfreundlich", "lang": "de"}
+{"requirements":"Interner Austausch, verständliche Erklärungen", "lang": "de"}
+{"requirements":"Populärwissenschaftlicher Stil, nicht-technisches Publikum", "lang": "de"}
+{"requirements":"Lockerer Stil, leicht zu lesen", "lang": "de"}
+{"requirements":"Formeller Stil, für externe Verwendung", "lang": "de"}
+{"requirements":"Geschäftlicher Kontext, professionelle Ausdrucksweise", "lang": "de"}
+{"requirements":"Management-Reporting, für Führungskräfte", "lang": "de"}
+{"requirements":"Bericht an die Geschäftsleitung, Ergebnisse zuerst", "lang": "de"}
+{"requirements":"Abteilungsübergreifendes Meeting, Informationsabgleich", "lang": "de"}
+{"requirements":"Remote-Meeting, Zusammenfassung der Diskussion", "lang": "de"}
+{"requirements":"Operations-Meeting, datengetrieben", "lang": "de"}
+{"requirements":"Marketingdiskussion, Trendzusammenfassung", "lang": "de"}
+{"requirements":"Vertriebsmeeting, Kundenfeedback", "lang": "de"}
+{"requirements":"Beratungsszenario, Probleme und Empfehlungen", "lang": "de"}
+{"requirements":"Entscheidungsmeeting, Vergleich von Optionen", "lang": "de"}
+{"requirements":"Bewertungsmeeting, Risikopunkte", "lang": "de"}
+{"requirements":"Arbeitsprotokoll, tägliche Aufzeichnung", "lang": "de"}
+{"requirements":"Persönliche Sprachnotiz, reflektierende Zusammenfassung", "lang": "de"}
+{"requirements":"Ideensammlung, schnelle Strukturierung", "lang": "de"}
+{"requirements":"Schnelle Notizen, strukturierte Vorlage", "lang": "de"}
+{"requirements":"Allgemeine Vorlage, wiederverwendbar", "lang": "de"}
+{"requirements":"Kurze Vorlage, schnell auszufüllen", "lang": "de"}
+{"requirements":"Detaillierte Vorlage, vollständige Informationen", "lang": "de"}
+{"requirements":"Stichpunktformat", "lang": "de"}
+{"requirements":"Tabellenbasierte Struktur", "lang": "de"}
+{"requirements":"Vorlage mit festen Feldern", "lang": "de"}
+{"requirements":"Handlungsorientiert, nächste Schritte", "lang": "de"}
+{"requirements":"Problemorientiert, offene Punkte", "lang": "de"}
+{"requirements":"Ergebnisorientiert, zentrale Aussagen", "lang": "de"}
+{"requirements":"Prozessdokumentation, Diskussionsverlauf", "lang": "de"}
+{"requirements":"Externe Abstimmung, klare Kommunikation", "lang": "de"}
+{"requirements":"Interne Dokumentation, keine sprachliche Ausschmückung", "lang": "de"}
+{"requirements":"Für technisches Publikum", "lang": "de"}
+{"requirements":"Für nicht-technisches Publikum", "lang": "de"}
+{"requirements":"Doppelte Perspektive: Management und Umsetzung", "lang": "de"}
+{"requirements":"Stil eines Sitzungsprotokolls", "lang": "de"}
+{"requirements":"Ergebnisorientiert, zentrale Aussagen", "lang": "de"}
+{"requirements":"Prozessdokumentation, Diskussionsverlauf", "lang": "de"}
+{"requirements":"Externe Abstimmung, klare Kommunikation", "lang": "de"}
+{"requirements":"Interne Dokumentation, keine sprachliche Ausschmückung", "lang": "de"}
+{"requirements":"Für technisches Publikum", "lang": "de"}
+{"requirements":"Für nicht-technisches Publikum", "lang": "de"}
+{"requirements":"Doppelte Perspektive: Management und Umsetzung", "lang": "de"}
+{"requirements":"Stil eines Sitzungsprotokolls", "lang": "de"}
+{"requirements":"会議シーン、構造が明確、箇条書き、経営層向け", "lang": "ja"}
+{"requirements":"週次会議、簡潔、要点まとめ", "lang": "ja"}
+{"requirements":"プロジェクト会議、アクションアイテム一覧", "lang": "ja"}
+{"requirements":"レビュー会議、結論優先", "lang": "ja"}
+{"requirements":"プロダクト企画、ロードマップ視点", "lang": "ja"}
+{"requirements":"要件検討、背景と解決策", "lang": "ja"}
+{"requirements":"技術会議、技術的要点", "lang": "ja"}
+{"requirements":"技術レビュー、メリット・デメリット", "lang": "ja"}
+{"requirements":"技術ディスカッション、結論とToDo", "lang": "ja"}
+{"requirements":"技術共有、重要な知識ポイント", "lang": "ja"}
+{"requirements":"開発会議、課題一覧", "lang": "ja"}
+{"requirements":"アーキテクチャ検討、重要な意思決定", "lang": "ja"}
+{"requirements":"学術的議論、論理性重視", "lang": "ja"}
+{"requirements":"研究会議、仮説と結論", "lang": "ja"}
+{"requirements":"授業・講義、知識の整理", "lang": "ja"}
+{"requirements":"教育の振り返り、重要ポイント確認", "lang": "ja"}
+{"requirements":"研修シーン、新人向け", "lang": "ja"}
+{"requirements":"社内共有、わかりやすい説明", "lang": "ja"}
+{"requirements":"一般向け、専門用語を避ける", "lang": "ja"}
+{"requirements":"カジュアルな文体、読みやすさ重視", "lang": "ja"}
+{"requirements":"フォーマルな文体、対外向け", "lang": "ja"}
+{"requirements":"ビジネスシーン、専門的な表現", "lang": "ja"}
+{"requirements":"経営報告、経営層向け", "lang": "ja"}
+{"requirements":"上長向け報告、結論先行", "lang": "ja"}
+{"requirements":"部門横断会議、情報整理と共有", "lang": "ja"}
+{"requirements":"リモート会議、議論の要約", "lang": "ja"}
+{"requirements":"運営会議、データ重視", "lang": "ja"}
+{"requirements":"マーケティング議論、トレンド整理", "lang": "ja"}
+{"requirements":"営業会議、顧客フィードバック", "lang": "ja"}
+{"requirements":"コンサルティング場面、課題と提案", "lang": "ja"}
+{"requirements":"意思決定会議、選択肢の比較", "lang": "ja"}
+{"requirements":"評価会議、リスクポイント", "lang": "ja"}
+{"requirements":"業務ログ、日常記録", "lang": "ja"}
+{"requirements":"個人音声メモ、振り返り要約", "lang": "ja"}
+{"requirements":"アイデアメモ、素早く整理", "lang": "ja"}
+{"requirements":"簡易メモ、構造化テンプレート", "lang": "ja"}
+{"requirements":"汎用テンプレート、再利用可能", "lang": "ja"}
+{"requirements":"短いテンプレート、素早く記入", "lang": "ja"}
+{"requirements":"詳細テンプレート、情報網羅", "lang": "ja"}
+{"requirements":"箇条書き形式", "lang": "ja"}
+{"requirements":"表形式の構造", "lang": "ja"}
+{"requirements":"固定項目テンプレート", "lang": "ja"}
+{"requirements":"アクション重視、次のステップ", "lang": "ja"}
+{"requirements":"課題志向、未解決事項", "lang": "ja"}
+{"requirements":"結論重視、主要な見解", "lang": "ja"}
+{"requirements":"プロセス記録、議論の流れ", "lang": "ja"}
+{"requirements":"対外共有、明確な表現", "lang": "ja"}
+{"requirements":"社内記録、修辞不要", "lang": "ja"}
+{"requirements":"技術者向け", "lang": "ja"}
+{"requirements":"非技術者向け", "lang": "ja"}
+{"requirements":"管理と実行の両視点", "lang": "ja"}
+{"requirements":"議事録スタイル", "lang": "ja"}
+{"requirements":"結論重視、主要な見解", "lang": "ja"}
+{"requirements":"プロセス記録、議論の流れ", "lang": "ja"}
+{"requirements":"対外共有、明確な表現", "lang": "ja"}
+{"requirements":"社内記録、修辞不要", "lang": "ja"}
+{"requirements":"技術者向け", "lang": "ja"}
+{"requirements":"非技術者向け", "lang": "ja"}
+{"requirements":"管理と実行の両視点", "lang": "ja"}
+{"requirements":"議事録スタイル", "lang": "ja"}
+{"requirements":"会议场景，结构清晰，要点化，管理层用","lang":"zh"}
+{"requirements":"meeting context, clear structure, bullet points, for management","lang":"en"}
+{"requirements":"会議シーン、構造が明確、要点整理、管理職向け","lang":"ja"}
+{"requirements":"Besprechungskontext, klare Struktur, Stichpunkte, für das Management","lang":"de"}
+{"requirements":"周会，简明，总结要点","lang":"zh"}
+{"requirements":"weekly meeting, concise, key points","lang":"en"}
+{"requirements":"週次会議、簡潔、要点まとめ","lang":"ja"}
+{"requirements":"wöchentliches Meeting, prägnant, Kernpunkte","lang":"de"}
+{"requirements":"项目会议，行动项清单","lang":"zh"}
+{"requirements":"project meeting, action items","lang":"en"}
+{"requirements":"プロジェクト会議、アクション項目","lang":"ja"}
+{"requirements":"Projektmeeting, Maßnahmenliste","lang":"de"}
+{"requirements":"评审会议，结论优先","lang":"zh"}
+{"requirements":"review meeting, conclusions first","lang":"en"}
+{"requirements":"レビュー会議、結論重視","lang":"ja"}
+{"requirements":"Review-Meeting, Fazit zuerst","lang":"de"}
+{"requirements":"决策会议，选项对比","lang":"zh"}
+{"requirements":"decision meeting, option comparison","lang":"en"}
+{"requirements":"意思決定会議、選択肢比較","lang":"ja"}
+{"requirements":"Entscheidungsmeeting, Optionenvergleich","lang":"de"}
+{"requirements":"老板汇报，结论先行","lang":"zh"}
+{"requirements":"report to manager, conclusion first","lang":"en"}
+{"requirements":"上司向け報告、結論先","lang":"ja"}
+{"requirements":"Bericht an Vorgesetzte, Fazit zuerst","lang":"de"}
+{"requirements":"技术会议，技术要点","lang":"zh"}
+{"requirements":"technical meeting, key technical points","lang":"en"}
+{"requirements":"技術会議、技術要点","lang":"ja"}
+{"requirements":"Technisches Meeting, technische Kernpunkte","lang":"de"}
+{"requirements":"技术评审，优缺点","lang":"zh"}
+{"requirements":"technical review, pros and cons","lang":"en"}
+{"requirements":"技術レビュー、長所と短所","lang":"ja"}
+{"requirements":"Technische Bewertung, Vor- und Nachteile","lang":"de"}
+{"requirements":"产品讨论，结构化","lang":"zh"}
+{"requirements":"product discussion, structured","lang":"en"}
+{"requirements":"プロダクト議論、構造化","lang":"ja"}
+{"requirements":"Produktdiskussion, strukturiert","lang":"de"}
+{"requirements":"简单模板，快速填写","lang":"zh"}
+{"requirements":"simple template, quick to fill","lang":"en"}
+{"requirements":"シンプルなテンプレート、すぐ記入","lang":"ja"}
+{"requirements":"Einfache Vorlage, schnell auszufüllen","lang":"de"}
+{"requirements":"通用模板，可复用","lang":"zh"}
+{"requirements":"general-purpose template, reusable","lang":"en"}
+{"requirements":"汎用テンプレート、再利用可能","lang":"ja"}
+{"requirements":"Allgemeine Vorlage, wiederverwendbar","lang":"de"}
+{"requirements":"条目式，要点化","lang":"zh"}
+{"requirements":"bullet-point format","lang":"en"}
+{"requirements":"箇条書き形式","lang":"ja"}
+{"requirements":"Stichpunktformat","lang":"de"}
+{"requirements":"行动导向，下一步","lang":"zh"}
+{"requirements":"action-oriented, next steps","lang":"en"}
+{"requirements":"アクション重視、次のステップ","lang":"ja"}
+{"requirements":"Handlungsorientiert, nächste Schritte","lang":"de"}
+{"requirements":"结论导向，核心观点","lang":"zh"}
+{"requirements":"conclusion-driven, key insights","lang":"en"}
+{"requirements":"結論重視、重要ポイント","lang":"ja"}
+{"requirements":"Fazit-orientiert, Kernaussagen","lang":"de"}
+{"requirements":"问题导向，待解决事项","lang":"zh"}
+{"requirements":"problem-oriented, open issues","lang":"en"}
+{"requirements":"課題重視、未解決事項","lang":"ja"}
+{"requirements":"Problemorientiert, offene Punkte","lang":"de"}
+{"requirements":"用于正式会议语音备忘录的总结模板，需要结构清晰、分点列出，突出关键结论，适合直接发送给管理层阅读","lang":"zh"}
+{"requirements":"a summary template for formal meeting voice memos, with clear structure, bullet points, and emphasized conclusions, suitable for management","lang":"en"}
+{"requirements":"正式な会議の音声メモ向けの要約テンプレート。構造が明確で要点整理され、管理職がそのまま読める形式","lang":"ja"}
+{"requirements":"Zusammenfassungsvorlage für formelle Besprechungs-Sprachmemos mit klarer Struktur, Stichpunkten und Fokus auf zentrale Ergebnisse, geeignet für das Management","lang":"de"}
+{"requirements":"管理层使用的会议纪要模板，需要先给出结论和决策，再补充关键讨论点和后续行动","lang":"zh"}
+{"requirements":"a meeting summary template for executives, presenting conclusions and decisions first, followed by key discussion points and next actions","lang":"en"}
+{"requirements":"経営層向けの会議要約テンプレート。結論と意思決定を最初に示し、その後に主要な議論点と次のアクションを記載","lang":"ja"}
+{"requirements":"Meeting-Zusammenfassungsvorlage für Führungskräfte, mit Entscheidungen und Fazit zuerst, danach zentrale Diskussionspunkte und nächste Schritte","lang":"de"}
+{"requirements":"用于项目会议的语音备忘录总结模板，需要明确行动项、负责人和下一步安排，方便执行和跟进","lang":"zh"}
+{"requirements":"a summary template for project meeting voice memos, focusing on action items, owners, and next steps for execution","lang":"en"}
+{"requirements":"プロジェクト会議の音声メモ用要約テンプレート。アクション項目、担当者、次のステップを明確にする","lang":"ja"}
+{"requirements":"Zusammenfassungsvorlage für Projektmeetings mit Fokus auf Maßnahmen, Verantwortlichkeiten und nächsten Schritten","lang":"de"}
+{"requirements":"项目推进过程中使用的会议总结模板，要求条理清晰，能够快速看到当前进展、问题以及待办事项","lang":"zh"}
+{"requirements":"a meeting summary template used during project execution, clearly showing progress, issues, and pending tasks","lang":"en"}
+{"requirements":"プロジェクト進行中に使う会議要約テンプレート。進捗、課題、未対応タスクが一目で分かる構成","lang":"ja"}
+{"requirements":"Vorlage für Projektstatus-Meetings, die Fortschritt, Probleme und offene Aufgaben übersichtlich darstellt","lang":"de"}
+{"requirements":"技术讨论类语音备忘录的总结模板，需要突出技术要点、方案对比以及最终结论，风格偏理性和专业","lang":"zh"}
+{"requirements":"a summary template for technical discussion voice memos, highlighting technical points, solution comparisons, and final conclusions","lang":"en"}
+{"requirements":"技術ディスカッションの音声メモ要約テンプレート。技術要点、案の比較、最終結論を中心に整理","lang":"ja"}
+{"requirements":"Zusammenfassungsvorlage für technische Diskussionen mit Fokus auf technische Kernpunkte, Lösungsvergleiche und Ergebnisse","lang":"de"}
+{"requirements":"用于技术评审会议的总结模板，需要清楚列出优缺点、风险点以及后续优化方向","lang":"zh"}
+{"requirements":"a summary template for technical review meetings, clearly listing pros, cons, risks, and follow-up improvements","lang":"en"}
+{"requirements":"技術レビュー会議向けの要約テンプレート。長所・短所、リスク、今後の改善方向を整理","lang":"ja"}
+{"requirements":"Vorlage für technische Reviews, die Vor- und Nachteile, Risiken und Optimierungsmaßnahmen klar aufführt","lang":"de"}
+{"requirements":"一个通用的语音备忘录总结模板，不限定具体场景，结构固定，方便在不同会议或讨论中反复使用","lang":"zh"}
+{"requirements":"a general-purpose summary template for voice memos, with a fixed structure that can be reused across different scenarios","lang":"en"}
+{"requirements":"特定の場面に限定しない音声メモ要約テンプレート。固定構造で様々な用途に再利用可能","lang":"ja"}
+{"requirements":"Allgemeine Zusammenfassungsvorlage für Sprachmemos mit fester Struktur zur Wiederverwendung in verschiedenen Situationen","lang":"de"}
+{"requirements":"偏向简明风格的总结模板，强调要点，不需要过多背景描述，适合快速浏览","lang":"zh"}
+{"requirements":"a concise summary template emphasizing key points without extensive background, suitable for quick reading","lang":"en"}
+{"requirements":"簡潔さを重視した要約テンプレート。背景説明は最小限で、要点中心","lang":"ja"}
+{"requirements":"Kompakte Zusammenfassungsvorlage mit Fokus auf Kernpunkte, ohne ausführliche Hintergrundinformationen","lang":"de"}
+{"requirements":"personal voice memo, reflection and summary","lang":"en"}
+{"requirements":"product planning, roadmap perspective","lang":"en"}
+{"requirements":"meeting minutes style","lang":"en"}
+{"requirements":"internal sharing, plain explanation","lang":"en"}
+{"requirements":"internal notes, plain language","lang":"en"}
+{"requirements":"consulting scenario: issues and recommendations","lang":"en"}
+{"requirements":"business context, professional tone","lang":"en"}
+{"requirements":"fixed-field template","lang":"en"}
+{"requirements":"training scenario, newcomer-friendly","lang":"en"}
+{"requirements":"academic discussion, rigorous reasoning","lang":"en"}
+{"requirements":"external sync, clear communication","lang":"en"}
+{"requirements":"work log, daily record","lang":"en"}
+{"requirements":"marketing discussion, trend summary","lang":"en"}
+{"requirements":"technical sharing, key takeaways","lang":"en"}
+{"requirements":"for technical readers","lang":"en"}
+{"requirements":"technical discussion, conclusions and action items","lang":"en"}
+{"requirements":"teaching retrospective, key takeaways","lang":"en"}
+{"requirements":"architecture discussion, key decisions","lang":"en"}
+{"requirements":"formal style, for external use","lang":"en"}
+{"requirements":"inspiration notes, quick capture","lang":"en"}
+{"requirements":"R&D meeting, issue list","lang":"en"}
+{"requirements":"research meeting, hypotheses and conclusions","lang":"en"}
+{"requirements":"popular-science style, non-technical audience","lang":"en"}
+{"requirements":"brief template, quick to fill","lang":"en"}
+{"requirements":"management and execution dual perspective","lang":"en"}
+{"requirements":"management report, for senior leadership","lang":"en"}
+{"requirements":"table-format structure","lang":"en"}
+{"requirements":"evaluation meeting, risk points","lang":"en"}
+{"requirements":"detailed template, full information","lang":"en"}
+{"requirements":"classroom lecture, knowledge consolidation","lang":"en"}
+{"requirements":"cross-department meeting, alignment of information","lang":"en"}
+{"requirements":"casual style, easy to read","lang":"en"}
+{"requirements":"process record, discussion flow","lang":"en"}
+{"requirements":"operations meeting, data-driven","lang":"en"}
+{"requirements":"remote meeting, discussion summary","lang":"en"}
+{"requirements":"sales meeting, customer feedback","lang":"en"}
+{"requirements":"quick notes, structured template","lang":"en"}
+{"requirements":"requirements discussion: background and proposal","lang":"en"}
+{"requirements":"for non-technical readers","lang":"en"}
+{"requirements": "医疗诊断报告，总结用，给医生看", "lang": "zh"}
+{"requirements": "英文医疗诊断报告模板", "lang": "zh"}
+{"requirements": "影像诊断，结构清晰", "lang": "zh"}
+{"requirements": "病理报告总结", "lang": "zh"}
+{"requirements": "给患者看的诊断总结，通俗点", "lang": "zh"}
+{"requirements": "Medical diagnostic report summary", "lang": "en"}
+{"requirements": "Radiology report, concise", "lang": "en"}
+{"requirements": "Clinical diagnosis summary template", "lang": "en"}
+{"requirements": "Patient-friendly medical report", "lang": "en"}
+{"requirements": "Pathology report overview", "lang": "en"}
+{"requirements": "用于医疗诊断报告的总结模板，结构清晰，要点化，适合医生快速查看", "lang": "zh"}
+{"requirements": "影像诊断报告总结，突出结论和建议", "lang": "zh"}
+{"requirements": "给患者的英文诊断报告总结，用词简单", "lang": "zh"}
+{"requirements": "住院诊断总结，适合出院时使用", "lang": "zh"}
+{"requirements": "医学报告总结模板，偏正式", "lang": "zh"}
+{"requirements": "A concise medical diagnostic report template for clinicians", "lang": "en"}
+{"requirements": "Diagnostic report summary for patients, easy to understand", "lang": "en"}
+{"requirements": "Structured clinical report with key findings", "lang": "en"}
+{"requirements": "Medical report template for discharge summary", "lang": "en"}
+{"requirements": "Imaging diagnosis summary with conclusions", "lang": "en"}
+{"requirements": "请提供一个医疗诊断报告的总结模板，用于医院内部沟通，要求结构化清晰，包含诊断结论、依据、风险提示和后续建议，语言专业但简洁", "lang": "zh"}
+{"requirements": "用于患者沟通的诊断报告总结模板，需要将专业医学术语转化为通俗表达，并避免引起不必要的恐慌", "lang": "zh"}
+{"requirements": "影像科使用的诊断报告总结，突出关键影像发现、初步诊断以及是否需要进一步检查", "lang": "zh"}
+{"requirements": "病理诊断报告的总结模板，适合在多学科会诊（MDT）中使用", "lang": "zh"}
+{"requirements": "一份标准化的医疗诊断报告总结模板，可用于不同科室，要求可扩展、易修改", "lang": "zh"}
+{"requirements": "Provide a structured medical diagnostic report summary template intended for clinicians, focusing on key findings, diagnostic reasoning, and recommended follow-up actions", "lang": "en"}
+{"requirements": "Create a patient-facing diagnostic report summary that simplifies medical terminology and clearly explains the diagnosis and next steps", "lang": "en"}
+{"requirements": "A formal clinical diagnostic report template suitable for hospital documentation and medical records", "lang": "en"}
+{"requirements": "Radiology diagnostic summary template highlighting critical findings and clinical implications", "lang": "en"}
+{"requirements": "A reusable medical report summary template that can be adapted across departments and specialties", "lang": "en"}
+{"requirements": "诊断报告，别太复杂", "lang": "zh"}
+{"requirements": "medical report but simple", "lang": "en"}
+{"requirements": "医生用，患者也能看懂", "lang": "zh"}
+{"requirements": "正式一点，但不要太学术", "lang": "zh"}
+{"requirements": "short, clear, medical diagnosis", "lang": "en"}
+{"requirements":"会议语音备忘录，简洁明了，专业，给领导看","lang":"zh"}
+{"requirements":"产品讨论，口语化，重点总结，同事用","lang":"zh"}
+{"requirements":"技术分享，讲解风，冷静理性，技术人员","lang":"zh"}
+{"requirements":"业务汇报，商务风，正式，管理层","lang":"zh"}
+{"requirements":"学术讨论，学术写作，严谨，研究人员","lang":"zh"}
+{"requirements":"培训记录，讲解风，友好，新人","lang":"zh"}
+{"requirements":"市场会议，新闻报道风，客观，外部客户","lang":"zh"}
+{"requirements":"项目复盘，专业，中立，产品经理","lang":"zh"}
+{"requirements":"方案评估，冷静理性，直接，决策层","lang":"zh"}
+{"requirements":"知识分享，科普风，非专业人士","lang":"zh"}
+{"requirements":"用于会议语音备忘录的总结模板，整体简洁清晰，突出结论和行动项，语气正式专业，适合发给领导","lang":"zh"}
+{"requirements":"请生成一个偏口语化的语音备忘录总结模板，用于团队内部讨论，语气友好，重点是快速对齐信息","lang":"zh"}
+{"requirements":"需要一个技术会议的总结模板，风格专业理性，突出技术要点和风险，主要给技术人员和产品经理阅读","lang":"zh"}
+{"requirements":"生成一个偏商务风的语音总结模板，语言正式但不冗长，适合向客户同步会议内容","lang":"zh"}
+{"requirements":"用于教学或培训场景的语音备忘录模板，讲解风格，结构清晰，对初学者友好","lang":"zh"}
+{"requirements":"学术讨论类语音备忘录，总结逻辑清楚，表达严谨，偏学术写作风格，供研究人员使用","lang":"zh"}
+{"requirements":"市场趋势讨论的语音总结模板，偏新闻报道风，语气客观中立，便于对外分享","lang":"zh"}
+{"requirements":"项目复盘语音备忘录模板，语气冷静理性，强调问题与改进点，适合内部评估","lang":"zh"}
+{"requirements":"用于会议语音备忘录的总结模板，整体简洁清晰，突出结论和行动项，语气正式专业，适合发给领导","lang":"zh"}
+{"requirements":"请生成一个偏口语化的语音备忘录总结模板，用于团队内部讨论，语气友好，重点是快速对齐信息","lang":"zh"}
+{"requirements":"需要一个技术会议的总结模板，风格专业理性，突出技术要点和风险，主要给技术人员和产品经理阅读","lang":"zh"}
+{"requirements":"生成一个偏商务风的语音总结模板，语言正式但不冗长，适合向客户同步会议内容","lang":"zh"}
+{"requirements":"用于教学或培训场景的语音备忘录模板，讲解风格，结构清晰，对初学者友好","lang":"zh"}
+{"requirements":"学术讨论类语音备忘录，总结逻辑清楚，表达严谨，偏学术写作风格，供研究人员使用","lang":"zh"}
+{"requirements":"市场趋势讨论的语音总结模板，偏新闻报道风，语气客观中立，便于对外分享","lang":"zh"}
+{"requirements":"项目复盘语音备忘录模板，语气冷静理性，强调问题与改进点，适合内部评估","lang":"zh"}
+{"requirements":"语音备忘录总结，整体专业，但表达要口语化，语气正式中带一点友好，给管理层快速浏览","lang":"zh"}
+{"requirements":"会议总结模板，学术写作风格，但受众是非专业人士","lang":"zh"}
+{"requirements":"技术讨论语音备忘录，科普风，给小白用户看","lang":"zh"}
+{"requirements":"商务会议语音总结，新闻报道风，语气中立","lang":"zh"}
+{"requirements":"产品复盘语音记录，批判但温和，供同事内部使用","lang":"zh"}
+{"requirements":"Meeting memo, clear structure, bullet points, for executives","lang":"en"}
+{"requirements":"Product discussion, conversational tone, key takeaways, for team","lang":"en"}
+{"requirements":"Technical sharing, explanatory style, calm and rational, for engineers","lang":"en"}
+{"requirements":"Business update, professional tone, formal, for management","lang":"en"}
+{"requirements":"Academic discussion, academic writing style, rigorous, for researchers","lang":"en"}
+{"requirements":"Training session, explanatory tone, friendly, for new hires","lang":"en"}
+{"requirements":"Market meeting, news-report style, objective, for external clients","lang":"en"}
+{"requirements":"Project review, professional and neutral, for product managers","lang":"en"}
+{"requirements":"Decision meeting, rational and direct, for decision makers","lang":"en"}
+{"requirements":"Knowledge sharing, popular science style, for non-experts","lang":"en"}
+{"requirements":"A summary template for meeting voice memos with a clear and concise structure, highlighting conclusions and action items, using a formal and professional tone suitable for executives.","lang":"en"}
+{"requirements":"A conversational voice memo summary template for internal team discussions, with a friendly tone and a focus on quickly aligning key points.","lang":"en"}
+{"requirements":"A technical meeting summary template with a professional and rational style, emphasizing technical highlights and risks, intended for engineers and product managers.","lang":"en"}
+{"requirements":"A business-oriented voice memo template with a formal but concise tone, suitable for sharing meeting outcomes with clients.","lang":"en"}
+{"requirements":"A voice memo summary template for training or teaching scenarios, using an explanatory style with a clear structure and beginner-friendly language.","lang":"en"}
+{"requirements":"An academic discussion voice memo template with clear logic and rigorous expression, written in an academic style for researchers.","lang":"en"}
+{"requirements":"A market trend discussion memo template in a news-reporting style, maintaining an objective and neutral tone for external communication.","lang":"en"}
+{"requirements":"A project retrospective voice memo template with a calm and rational tone, focusing on issues and improvement points for internal evaluation.","lang":"en"}
+{"requirements":"Please provide a summary template for formal meeting voice memos. The overall style should be professional and business-oriented, with a formal, objective, and neutral tone. The template should have a clear structure, starting with key conclusions, followed by major discussion points and next action items. The primary audience is senior management and cross-functional leads.","lang":"en"}
+{"requirements":"I need a voice memo summary template suitable for technical discussions. The tone should be calm and rational, avoiding emotional language, with a focus on technical solutions, pros and cons, and potential risks. The writing style should be professional, targeting engineers and product managers.","lang":"en"}
+{"requirements":"Please generate a popular-science-style voice memo template designed to explain complex topics clearly to non-experts. The tone should be friendly and gentle, using accessible language while maintaining a clear and organized structure.","lang":"en"}
+{"requirements":"A voice memo summary template for academic discussions is required. The writing style should resemble academic writing, with rigorous logic and precise wording. The tone should be formal and neutral, suitable for research meetings or paper discussions.","lang":"en"}
+{"requirements":"Please design a voice memo template for business communication scenarios. The style should be business-focused, with a formal yet direct tone, highlighting decision outcomes and next steps, primarily for clients and investors.","lang":"en"}
+{"requirements":"A professional voice memo summary with a conversational expression, formal yet slightly friendly, intended for executives to skim quickly.","lang":"en"}
+{"requirements":"A meeting summary template written in an academic style but intended for non-professional audiences.","lang":"en"}
+{"requirements":"A technical discussion voice memo presented in a popular science style for beginner users.","lang":"en"}
+{"requirements":"A business meeting voice memo written in a news-reporting style with a neutral tone.","lang":"en"}
+{"requirements":"A product retrospective voice memo with a critical but gentle tone for internal team use.","lang":"en"}
+{"requirements":"会議の音声メモ、構造が明確、要点整理、経営層向け","lang":"ja"}
+{"requirements":"プロダクト議論、口語的、要点まとめ、チーム向け","lang":"ja"}
+{"requirements":"技術共有、解説調、冷静で論理的、エンジニア向け","lang":"ja"}
+{"requirements":"業務報告、ビジネス風、正式、管理職向け","lang":"ja"}
+{"requirements":"学術的議論、学術文体、厳密、研究者向け","lang":"ja"}
+{"requirements":"研修記録、解説風、親しみやすい、新人向け","lang":"ja"}
+{"requirements":"市場会議、ニュース調、客観的、外部顧客向け","lang":"ja"}
+{"requirements":"プロジェクトレビュー、専門的かつ中立、プロダクトマネージャー向け","lang":"ja"}
+{"requirements":"意思決定会議、理性的で直接的、意思決定者向け","lang":"ja"}
+{"requirements":"知識共有、科普風、非専門家向け","lang":"ja"}
+{"requirements":"会議用の音声メモ要約テンプレート。構造が簡潔で明確、結論とアクション項目を重視し、経営層向けの正式で専門的なトーン。","lang":"ja"}
+{"requirements":"チーム内ディスカッション向けの音声メモ要約テンプレート。口語的で親しみやすい語調、情報の素早い共有を目的とする。","lang":"ja"}
+{"requirements":"技術会議向けの要約テンプレート。専門的かつ論理的な文体で、技術的ポイントとリスクを強調し、エンジニアとPM向け。","lang":"ja"}
+{"requirements":"顧客共有を想定したビジネス向け音声メモテンプレート。正式だが簡潔な表現を用いる。","lang":"ja"}
+{"requirements":"研修や教育シーン向けの音声メモ要約テンプレート。解説調で構造が明確、初心者にも理解しやすい内容。","lang":"ja"}
+{"requirements":"研究会議向けの音声要約テンプレート。論理構成が明確で、学術文体を用い、研究者向け。","lang":"ja"}
+{"requirements":"市場動向を議論する音声メモ要約テンプレート。ニュース記事風で、客観的かつ中立なトーン。","lang":"ja"}
+{"requirements":"プロジェクト振り返り用の音声メモテンプレート。冷静で理性的な語調で、課題と改善点を整理する。","lang":"ja"}
+{"requirements":"正式な会議音声メモ用の要約テンプレートを作成してください。全体の文体はビジネス寄りで専門的、語調は正式・客観・中立とします。構成は明確で、最初に結論、その後に主要な議論点と次のアクション項目を示し、主な読者は経営層および部門横断の責任者です。","lang":"ja"}
+{"requirements":"技術ディスカッション向けの音声メモ要約テンプレートが必要です。感情的な表現を避け、冷静かつ論理的な語調で、技術的な選択肢、利点・欠点、潜在的リスクを整理し、エンジニアおよびプロダクトマネージャー向けとします。","lang":"ja"}
+{"requirements":"非専門家にも理解できるよう、複雑な内容を分かりやすく説明する科普風の音声メモテンプレートを作成してください。親しみやすく穏やかな語調で、構造は明確に保ってください。","lang":"ja"}
+{"requirements":"学術的な議論をまとめる音声メモ要約テンプレート。学術論文に近い文体で、論理性と表現の正確さを重視し、研究会や論文議論後の整理に使用します。","lang":"ja"}
+{"requirements":"ビジネスコミュニケーション向けの音声メモテンプレートを設計してください。ビジネス調で、正式かつ直接的な語調を用い、意思決定結果と次のステップを明確にし、顧客や投資家向けとします。","lang":"ja"}
+{"requirements":"専門的だが口語的な表現を用いた音声メモ要約。正式だがやや親しみやすく、経営層が素早く確認できる内容。","lang":"ja"}
+{"requirements":"学術文体で書かれているが、非専門家向けの会議要約テンプレート。","lang":"ja"}
+{"requirements":"技術的な議論を、初心者向けに科普風でまとめる音声メモ。","lang":"ja"}
+{"requirements":"ビジネス会議の音声要約を、ニュース記事のような文体で中立的にまとめる。","lang":"ja"}
+{"requirements":"プロダクト振り返り用音声メモ。批判的だが穏やかな語調で、チーム内部向け。","lang":"ja"}
+{"requirements":"Meeting-Sprachnotiz, kurz und klar, professionell, für Führungskräfte","lang":"de"}
+{"requirements":"Produktdiskussion, umgangssprachlich, Fokus auf Kernpunkte, für Kollegen","lang":"de"}
+{"requirements":"Technischer Austausch, erklärender Stil, ruhig und rational, für technische Mitarbeiter","lang":"de"}
+{"requirements":"Geschäftsbericht, Business-Stil, formal, für das Management","lang":"de"}
+{"requirements":"Akademische Diskussion, wissenschaftlicher Schreibstil, präzise und streng, für Forscher","lang":"de"}
+{"requirements":"Schulungsprotokoll, erklärender Stil, freundlich, für Neueinsteiger","lang":"de"}
+{"requirements":"Marketing-Meeting, journalistischer Stil, objektiv, für externe Kunden","lang":"de"}
+{"requirements":"Projekt-Review, professionell, neutral, für Produktmanager","lang":"de"}
+{"requirements":"Bewertung von Lösungsansätzen, ruhig und rational, direkt, für Entscheidungsträger","lang":"de"}
+{"requirements":"Wissensaustausch, populärwissenschaftlicher Stil, für Nicht-Experten","lang":"de"}
+{"requirements":"Zusammenfassungsvorlage für Meeting-Sprachnotizen, insgesamt klar und prägnant, mit Fokus auf Schlussfolgerungen und Maßnahmen, formell und professionell, geeignet für Führungskräfte","lang":"de"}
+{"requirements":"Erstelle eine eher umgangssprachliche Vorlage für Sprachnotiz-Zusammenfassungen, für interne Teamdiskussionen, freundlicher Ton, Fokus auf schnelle Abstimmung","lang":"de"}
+{"requirements":"Vorlage für die Zusammenfassung eines technischen Meetings, professionell und rational, mit Fokus auf technische Kernpunkte und Risiken, für technische Mitarbeiter und Produktmanager","lang":"de"}
+{"requirements":"Business-orientierte Vorlage für Sprachzusammenfassungen, formelle aber nicht überladene Sprache, geeignet zur Abstimmung mit Kunden","lang":"de"}
+{"requirements":"Vorlage für Sprachnotizen im Schulungs- oder Lehrkontext, erklärender Stil, klare Struktur, einsteigerfreundlich","lang":"de"}
+{"requirements":"Sprachnotizen für akademische Diskussionen, logisch klar zusammengefasst, präzise Ausdrucksweise, wissenschaftlicher Schreibstil, für Forscher","lang":"de"}
+{"requirements":"Vorlage für die Zusammenfassung von Markttrend-Diskussionen, journalistischer Stil, objektiver und neutraler Ton, geeignet zur externen Weitergabe","lang":"de"}
+{"requirements":"Vorlage für Projekt-Retrospektiven als Sprachnotiz, ruhiger und rationaler Ton, Betonung von Problemen und Verbesserungsmöglichkeiten, für interne Bewertungen","lang":"de"}
+{"requirements":"Zusammenfassungsvorlage für Meeting-Sprachnotizen, insgesamt klar und prägnant, mit Fokus auf Schlussfolgerungen und Maßnahmen, formell und professionell, geeignet für Führungskräfte","lang":"de"}
+{"requirements":"Erstelle eine eher umgangssprachliche Vorlage für Sprachnotiz-Zusammenfassungen, für interne Teamdiskussionen, freundlicher Ton, Fokus auf schnelle Abstimmung","lang":"de"}
+{"requirements":"Vorlage für die Zusammenfassung eines technischen Meetings, professionell und rational, mit Fokus auf technische Kernpunkte und Risiken, für technische Mitarbeiter und Produktmanager","lang":"de"}
+{"requirements":"Business-orientierte Vorlage für Sprachzusammenfassungen, formelle aber nicht überladene Sprache, geeignet zur Abstimmung mit Kunden","lang":"de"}
+{"requirements":"Vorlage für Sprachnotizen im Schulungs- oder Lehrkontext, erklärender Stil, klare Struktur, einsteigerfreundlich","lang":"de"}
+{"requirements":"Sprachnotizen für akademische Diskussionen, logisch klar zusammengefasst, präzise Ausdrucksweise, wissenschaftlicher Schreibstil, für Forscher","lang":"de"}
+{"requirements":"Vorlage für die Zusammenfassung von Markttrend-Diskussionen, journalistischer Stil, objektiver und neutraler Ton, geeignet zur externen Weitergabe","lang":"de"}
+{"requirements":"Vorlage für Projekt-Retrospektiven als Sprachnotiz, ruhiger und rationaler Ton, Betonung von Problemen und Verbesserungsmöglichkeiten, für interne Bewertungen","lang":"de"}
+{"requirements":"Sprachnotiz-Zusammenfassung, insgesamt professionell, aber mit umgangssprachlicher Ausdrucksweise, formell mit leicht freundlichem Ton, für die schnelle Durchsicht durch das Management","lang":"de"}
+{"requirements":"Vorlage für Meeting-Zusammenfassungen, wissenschaftlicher Schreibstil, aber Zielgruppe sind Nicht-Experten","lang":"de"}
+{"requirements":"Technische Diskussions-Sprachnotiz, populärwissenschaftlicher Stil, für Einsteiger","lang":"de"}
+{"requirements":"Business-Meeting-Zusammenfassung, journalistischer Stil, neutraler Ton","lang":"de"}
+{"requirements":"Produkt-Retrospektive als Sprachnotiz, kritisch aber moderat im Ton, für die interne Nutzung durch Kollegen","lang":"de"}
