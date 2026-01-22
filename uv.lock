@@ -1987,7 +1987,7 @@ test = [
 
 [package.metadata]
 requires-dist = [
-    { name = "chainlit", specifier = ">=2.9.6" },
+    { name = "chainlit", specifier = "==2.9.6" },
     { name = "coverage", marker = "extra == 'test'" },
     { name = "datasets", specifier = ">=4.4.2" },
     { name = "dotenv", specifier = ">=0.9.9" },

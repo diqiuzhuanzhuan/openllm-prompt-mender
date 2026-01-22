@@ -110,6 +110,17 @@ class AssessTemplateQuality(dspy.Signature):
         "against that requested language instead."),
         type_=float
     )
+    language_appropriateness_score: float = dspy.OutputField(desc=(
+        "Score (0.0–1.0) evaluating whether the use of multiple languages in the template "
+        "is appropriate and contextually justified. "
+        "A high score means that any foreign-language terms (e.g., English in a Chinese template) "
+        "are limited to widely accepted abbreviations or technical terms (e.g., ROI, KPI), "
+        "while structural elements, placeholders, and labels are properly localized. "
+        "A low score indicates unnecessary or inappropriate mixing, such as untranslated "
+        "placeholders like '[Action]' or '[Date]' in a non-English template."
+    ),
+    type_=float
+    )
 
     rationale: str = dspy.OutputField(
         desc="A concise explanation justifying the scores assigned for each evaluation dimension.",
@@ -141,8 +152,9 @@ def llm_judge_metric(example, pred, trace=None):
         assessment.tone_score +
         assessment.scenario_alignment_score +
         assessment.audience_match_score +
-        assessment.language_consistency_score
-    ) / 5.0
+        assessment.language_consistency_score + 
+        assessment.language_appropriateness_score
+    ) / 6.0
     
     # Return a Prediction object which can include both the numeric score and feedback [4]
     # Feedback is crucial for optimizers like GEPA to understand how to improve the program [6, 7]
@@ -194,7 +206,12 @@ async def render_ui(message: cl.Message):
     voice_memo_app = VoiceMemoApp()
     voice_memo_app.load("audio_assistant.json")
     pred = voice_memo_app(requirements=message.content)
-    await cl.Message(content=pred.template).send()
+    await cl.Message(
+        content=pred.template,
+        actions=[
+            cl.Action(name="copy", label="copy", payload={"text": "pred.template"}, type="copy")
+        ]
+        ).send()
 
 #chainlit run src/openllm_prompt_mender/apps/audio_assistant.py -w --host 0.0.0.0 --port 8538 
 """
