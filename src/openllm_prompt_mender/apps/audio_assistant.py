@@ -201,8 +201,20 @@ if __name__ == "__main__":
 
 import chainlit as cl
 
+def dump_prompt():
+    import pprint
+    pprint.pprint("prompt: " + "#"*300)
+    messages = dspy.clients.base_lm.GLOBAL_HISTORY[-1]["messages"]
+    pprint(messages)
+    pprint.pprint("#"*300)
+    return messages
+
 @cl.on_message
 async def render_ui(message: cl.Message):
+    if message.content == "<dump_prompt>":
+        await cl.Message(
+            content=dump_prompt()).send
+        return
     voice_memo_app = VoiceMemoApp()
     voice_memo_app.load("audio_assistant.json")
     pred = voice_memo_app(requirements=message.content)

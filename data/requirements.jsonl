@@ -522,3 +522,440 @@
 {"requirements":"Technische Diskussions-Sprachnotiz, populärwissenschaftlicher Stil, für Einsteiger","lang":"de"}
 {"requirements":"Business-Meeting-Zusammenfassung, journalistischer Stil, neutraler Ton","lang":"de"}
 {"requirements":"Produkt-Retrospektive als Sprachnotiz, kritisch aber moderat im Ton, für die interne Nutzung durch Kollegen","lang":"de"}
+{"requirements":"方案评估，领导看，专业风格，客观严肃口吻","lang":"zh"}
+{"requirements":"会议纪要，整理行动项和责任人，简洁明了，同事看","lang":"zh"}
+{"requirements":"销售电话，客户看，整理痛点需求，口语化但专业","lang":"zh"}
+{"requirements":"领导汇报用，SWOT分析，商务风，正式语气","lang":"zh"}
+{"requirements":"客户分析，产品经理看，输出优先级排序，专业风格","lang":"zh"}
+{"requirements":"市场调研，投资人看，结论先行，冷静理性","lang":"zh"}
+{"requirements":"培训场景，小白用户，讲解风，温和语气","lang":"zh"}
+{"requirements":"面试评估，同事看，STAR结构，客观语气","lang":"zh"}
+{"requirements":"方案讨论，输出风险点，专业风格，中立语气","lang":"zh"}
+{"requirements":"课堂讲解，学生看，科普风，简洁明了","lang":"zh"}
+{"requirements":"客户电话，整理关键信息，友好语气，列表形式","lang":"zh"}
+{"requirements":"通话记录，输出TODO列表，直接语气","lang":"zh"}
+{"requirements":"汇报材料，领导看，总分总结构，正式专业","lang":"zh"}
+{"requirements":"市场分析，观点提炼，新闻报道风，客观","lang":"zh"}
+{"requirements":"销售复盘，同事看，痛点总结，冷静理性","lang":"zh"}
+{"requirements":"项目会议，输出任务清单，简洁风格","lang":"zh"}
+{"requirements":"方案评估，输出决策结论，严肃语气","lang":"zh"}
+{"requirements":"客户分析，整理需求清单，专业，中立","lang":"zh"}
+{"requirements":"产品讨论，产品经理看，要点列表","lang":"zh"}
+{"requirements":"培训总结，输出行动建议，鼓励语气","lang":"zh"}
+{"requirements":"面试记录，提炼候选人优势，客观专业","lang":"zh"}
+{"requirements":"销售电话，跟进意向客户，友好直接","lang":"zh"}
+{"requirements":"市场调研，输出核心发现，结论先行","lang":"zh"}
+{"requirements":"会议讨论，梳理分歧点，冷静理性","lang":"zh"}
+{"requirements":"方案汇报，领导看，商务风，专业","lang":"zh"}
+{"requirements":"客户沟通纪要，整理关键诉求","lang":"zh"}
+{"requirements":"项目复盘，总结经验教训，客观语气","lang":"zh"}
+{"requirements":"产品评审，输出风险和建议","lang":"zh"}
+{"requirements":"培训讲义，教师用，结构清晰","lang":"zh"}
+{"requirements":"市场分析，投资人视角，专业冷静","lang":"zh"}
+{"requirements":"销售会议，整理下一步行动","lang":"zh"}
+{"requirements":"客户分析，输出画像要点","lang":"zh"}
+{"requirements":"通用场景，总结重点信息","lang":"zh"}
+{"requirements":"领导汇报，观点提炼，结论先行","lang":"zh"}
+{"requirements":"方案讨论，整理可选路径","lang":"zh"}
+{"requirements":"市场调研，风险梳理","lang":"zh"}
+{"requirements":"客户电话纪要，列表形式","lang":"zh"}
+{"requirements":"项目启动会，明确责任人","lang":"zh"}
+{"requirements":"产品规划讨论，专业风格","lang":"zh"}
+{"requirements":"销售总结，数据导向，冷静","lang":"zh"}
+{"requirements":"培训复盘，TODO列表","lang":"zh"}
+{"requirements":"面试评估，是否录用建议","lang":"zh"}
+{"requirements":"方案评估，优缺点分析","lang":"zh"}
+{"requirements":"客户分析，下一步建议","lang":"zh"}
+{"requirements":"会议纪要，简洁明了","lang":"zh"}
+{"requirements":"市场观察，观点输出","lang":"zh"}
+{"requirements":"项目沟通，同事看，直接语气","lang":"zh"}
+{"requirements":"通用分析，结构化总结","lang":"zh"}
+{"requirements":"汇报材料，Markdown格式","lang":"zh"}
+{"requirements":"方案评估，领导看，梳理风险点和备选方案，专业严肃","lang":"zh"}
+{"requirements":"销售电话，整理客户异议，友好但直接","lang":"zh"}
+{"requirements":"会议讨论，输出决策结论和后续行动","lang":"zh"}
+{"requirements":"客户分析，市场视角，提炼关键特征","lang":"zh"}
+{"requirements":"市场调研，整理样本结论，客观中立","lang":"zh"}
+{"requirements":"领导汇报，三段式总结，正式语气","lang":"zh"}
+{"requirements":"培训场景，输出行动清单，讲解风","lang":"zh"}
+{"requirements":"面试评估，记录优缺点，对比候选人","lang":"zh"}
+{"requirements":"方案讨论，产品经理看，梳理可行路径","lang":"zh"}
+{"requirements":"客户电话纪要，提炼关键信息点","lang":"zh"}
+{"requirements":"项目会议，整理分工和时间节点","lang":"zh"}
+{"requirements":"销售复盘，分析失败原因，冷静理性","lang":"zh"}
+{"requirements":"市场分析，输出趋势判断","lang":"zh"}
+{"requirements":"汇报材料，领导看，结论先行，专业风格","lang":"zh"}
+{"requirements":"客户分析，输出潜在需求","lang":"zh"}
+{"requirements":"产品评审会议，总结主要争议点","lang":"zh"}
+{"requirements":"培训总结，面向新同事，口语化","lang":"zh"}
+{"requirements":"销售会议，输出下一步跟进策略","lang":"zh"}
+{"requirements":"方案评估，对比多个方案优劣","lang":"zh"}
+{"requirements":"通话记录，总结客户态度","lang":"zh"}
+{"requirements":"市场调研，投资人视角，提炼核心逻辑","lang":"zh"}
+{"requirements":"项目复盘，输出可改进点","lang":"zh"}
+{"requirements":"面试记录，判断岗位匹配度","lang":"zh"}
+{"requirements":"客户沟通，整理需求变化","lang":"zh"}
+{"requirements":"方案讨论，输出建议方案","lang":"zh"}
+{"requirements":"会议纪要，整理关键决策","lang":"zh"}
+{"requirements":"产品规划，梳理阶段目标","lang":"zh"}
+{"requirements":"销售分析，数据驱动，总结要点","lang":"zh"}
+{"requirements":"培训讲解，结构清晰，循序渐进","lang":"zh"}
+{"requirements":"市场观察，输出简要结论","lang":"zh"}
+{"requirements":"客户分析，区分高低价值客户","lang":"zh"}
+{"requirements":"项目启动，明确目标和分工","lang":"zh"}
+{"requirements":"领导汇报，重点突出，简洁明了","lang":"zh"}
+{"requirements":"销售电话，总结成交障碍","lang":"zh"}
+{"requirements":"方案评估，是否继续推进建议","lang":"zh"}
+{"requirements":"产品讨论，输出TODO列表","lang":"zh"}
+{"requirements":"市场调研，整理用户反馈","lang":"zh"}
+{"requirements":"客户电话，跟进问题解决情况","lang":"zh"}
+{"requirements":"会议讨论，记录不同观点","lang":"zh"}
+{"requirements":"培训复盘，总结关键收获","lang":"zh"}
+{"requirements":"面试评估，给出录用建议","lang":"zh"}
+{"requirements":"销售总结，输出关键指标","lang":"zh"}
+{"requirements":"方案讨论，风险与收益分析","lang":"zh"}
+{"requirements":"项目沟通，明确下一步","lang":"zh"}
+{"requirements":"客户分析，输出行动建议","lang":"zh"}
+{"requirements":"汇报材料，结构化整理","lang":"zh"}
+{"requirements":"通用场景，快速要点总结","lang":"zh"}
+{"requirements":"会议纪要，Markdown格式","lang":"zh"}
+{"requirements":"方案评估，领导查看，客观，严肃，专业风格","lang":"zh"}
+{"requirements":"方案讨论，同事，专业，行动项","lang":"zh"}
+{"requirements":"会议纪要，中立语气，要点列表","lang":"zh"}
+{"requirements":"领导汇报，正式语气，结论先行","lang":"zh"}
+{"requirements":"客户分析，专业风格，数据总结","lang":"zh"}
+{"requirements":"销售电话，客户，友好口语化，需求梳理","lang":"zh"}
+{"requirements":"客诉电话，客户，温和语气，问题解决","lang":"zh"}
+{"requirements":"方案评估，投资人，客观严肃，SWOT","lang":"zh"}
+{"requirements":"项目汇报，领导，专业风格，决策结论","lang":"zh"}
+{"requirements":"方案评估，可行性分析，风险梳理","lang":"zh"}
+{"requirements":"会议，任务拆解，TODO列表","lang":"zh"}
+{"requirements":"领导汇报，商务风，三段式总结","lang":"zh"}
+{"requirements":"市场调研，非专业人士，科普风","lang":"zh"}
+{"requirements":"客户电话，中立语气，沟通纪要","lang":"zh"}
+{"requirements":"培训讲解，学生，讲解风，要点整理","lang":"zh"}
+{"requirements":"方案讨论，产品经理，优先级排序","lang":"zh"}
+{"requirements":"方案评估，风险控制，冷静理性","lang":"zh"}
+{"requirements":"通话纪要，行动项，责任人","lang":"zh"}
+{"requirements":"项目复盘，同事，经验总结","lang":"zh"}
+{"requirements":"面试评估，客观严肃，能力分析","lang":"zh"}
+{"requirements":"客户分析，表格形式，数据对比","lang":"zh"}
+{"requirements":"会议纪要，决策结论，Markdown","lang":"zh"}
+{"requirements":"方案评估，领导，交付物清单","lang":"zh"}
+{"requirements":"市场调研报告，专业风格，总分总","lang":"zh"}
+{"requirements":"方案讨论，非正式语气，头脑风暴","lang":"zh"}
+{"requirements":"客户沟通，友好语气，需求确认","lang":"zh"}
+{"requirements":"领导决策支持，风险对比，客观","lang":"zh"}
+{"requirements":"项目评估，ROI分析，理性风格","lang":"zh"}
+{"requirements":"销售跟进，客户，直接语气，行动项","lang":"zh"}
+{"requirements":"会议总结，结论先行，三段式","lang":"zh"}
+{"requirements":"方案评估，多方案对比，专业分析","lang":"zh"}
+{"requirements":"汇报材料，PPT结构化，要点列表","lang":"zh"}
+{"requirements":"客户分析，痛点需求整理","lang":"zh"}
+{"requirements":"项目计划，任务清单，优先级","lang":"zh"}
+{"requirements":"方案讨论，可行性验证，专业","lang":"zh"}
+{"requirements":"市场分析，数据驱动，客观表达","lang":"zh"}
+{"requirements":"领导简报，简洁明了","lang":"zh"}
+{"requirements":"客户电话，沟通纪要，中立","lang":"zh"}
+{"requirements":"方案评估，决策辅助，严肃语气","lang":"zh"}
+{"requirements":"培训总结，要点提炼","lang":"zh"}
+{"requirements":"项目汇报，风险梳理","lang":"zh"}
+{"requirements":"方案评估，SWOT分析，专业","lang":"zh"}
+{"requirements":"会议记录，Markdown，要点","lang":"zh"}
+{"requirements":"客户分析，结论先行，表格","lang":"zh"}
+{"requirements":"项目评估，阶段性总结","lang":"zh"}
+{"requirements":"方案讨论，多视角分析，理性","lang":"zh"}
+{"requirements":"领导决策材料，专业严肃","lang":"zh"}
+{"requirements":"市场调研，观点提炼","lang":"zh"}
+{"requirements":"方案评估，风险与收益对比","lang":"zh"}
+{"requirements":"solution evaluation, for leadership, professional style, objective and serious tone","lang":"en"}
+{"requirements":"meeting minutes, action items and owners, concise, for colleagues","lang":"en"}
+{"requirements":"sales call, for customers, pain point analysis, conversational but professional","lang":"en"}
+{"requirements":"leadership presentation, SWOT analysis, business style, formal tone","lang":"en"}
+{"requirements":"customer analysis, for product managers, priority ranking, professional style","lang":"en"}
+{"requirements":"market research, for investors, conclusion first, calm and rational","lang":"en"}
+{"requirements":"training scenario, for beginners, explanatory style, gentle tone","lang":"en"}
+{"requirements":"interview evaluation, for colleagues, STAR structure, objective tone","lang":"en"}
+{"requirements":"solution discussion, risk identification, professional style, neutral tone","lang":"en"}
+{"requirements":"classroom explanation, for students, popular science style, concise","lang":"en"}
+{"requirements":"customer call, key information extraction, friendly tone, list format","lang":"en"}
+{"requirements":"call log, TODO list, direct tone","lang":"en"}
+{"requirements":"presentation material, for leadership, general-specific-general structure, formal and professional","lang":"en"}
+{"requirements":"market analysis, insight extraction, news reporting style, objective","lang":"en"}
+{"requirements":"sales review, for colleagues, pain point summary, calm and rational","lang":"en"}
+{"requirements":"project meeting, task list output, concise style","lang":"en"}
+{"requirements":"solution evaluation, decision conclusion, serious tone","lang":"en"}
+{"requirements":"customer analysis, requirement list, professional, neutral","lang":"en"}
+{"requirements":"product discussion, for product managers, key points list","lang":"en"}
+{"requirements":"training summary, action recommendations, encouraging tone","lang":"en"}
+{"requirements":"interview notes, candidate strengths extraction, objective and professional","lang":"en"}
+{"requirements":"sales call, follow-up with potential customers, friendly and direct","lang":"en"}
+{"requirements":"market research, core findings output, conclusion first","lang":"en"}
+{"requirements":"meeting discussion, disagreement analysis, calm and rational","lang":"en"}
+{"requirements":"solution presentation, for leadership, business style, professional","lang":"en"}
+{"requirements":"customer communication notes, key requests summary","lang":"en"}
+{"requirements":"project retrospective, lessons learned, objective tone","lang":"en"}
+{"requirements":"product review, risks and recommendations","lang":"en"}
+{"requirements":"training materials, for instructors, clear structure","lang":"en"}
+{"requirements":"market analysis, investor perspective, professional and rational","lang":"en"}
+{"requirements":"sales meeting, next-step actions","lang":"en"}
+{"requirements":"customer analysis, persona key points","lang":"en"}
+{"requirements":"general scenario, key information summary","lang":"en"}
+{"requirements":"leadership presentation, insight extraction, conclusion first","lang":"en"}
+{"requirements":"solution discussion, alternative paths organization","lang":"en"}
+{"requirements":"market research, risk identification","lang":"en"}
+{"requirements":"customer call notes, list format","lang":"en"}
+{"requirements":"project kickoff, owner assignment","lang":"en"}
+{"requirements":"product planning discussion, professional style","lang":"en"}
+{"requirements":"sales summary, data-driven, calm tone","lang":"en"}
+{"requirements":"training retrospective, TODO list","lang":"en"}
+{"requirements":"interview evaluation, hiring recommendation","lang":"en"}
+{"requirements":"solution evaluation, pros and cons analysis","lang":"en"}
+{"requirements":"customer analysis, next-step recommendations","lang":"en"}
+{"requirements":"meeting minutes, concise","lang":"en"}
+{"requirements":"market observation, insight output","lang":"en"}
+{"requirements":"project communication, for colleagues, direct tone","lang":"en"}
+{"requirements":"general analysis, structured summary","lang":"en"}
+{"requirements":"presentation material, Markdown format","lang":"en"}
+{"requirements":"solution evaluation, for leadership, risk points and alternatives, professional and serious","lang":"en"}
+{"requirements":"sales call, customer objections summary, friendly but direct","lang":"en"}
+{"requirements":"meeting discussion, decision conclusions and follow-up actions","lang":"en"}
+{"requirements":"customer analysis, market perspective, key feature extraction","lang":"en"}
+{"requirements":"market research, sample findings summary, objective and neutral","lang":"en"}
+{"requirements":"leadership presentation, three-part summary, formal tone","lang":"en"}
+{"requirements":"training scenario, action list output, explanatory style","lang":"en"}
+{"requirements":"interview evaluation, strengths and weaknesses comparison","lang":"en"}
+{"requirements":"solution discussion, for product managers, feasible path analysis","lang":"en"}
+{"requirements":"customer call notes, key information points","lang":"en"}
+{"requirements":"project meeting, responsibility and timeline organization","lang":"en"}
+{"requirements":"sales retrospective, failure analysis, calm and rational","lang":"en"}
+{"requirements":"market analysis, trend judgment","lang":"en"}
+{"requirements":"presentation material, for leadership, conclusion first, professional style","lang":"en"}
+{"requirements":"customer analysis, potential demand extraction","lang":"en"}
+{"requirements":"product review meeting, main disagreements summary","lang":"en"}
+{"requirements":"training summary, for new colleagues, conversational tone","lang":"en"}
+{"requirements":"sales meeting, next-step follow-up strategy","lang":"en"}
+{"requirements":"solution evaluation, comparison of multiple options","lang":"en"}
+{"requirements":"call log, customer attitude summary","lang":"en"}
+{"requirements":"market research, investor perspective, core logic extraction","lang":"en"}
+{"requirements":"project retrospective, improvement points","lang":"en"}
+{"requirements":"interview notes, role fit evaluation","lang":"en"}
+{"requirements":"customer communication, requirement change tracking","lang":"en"}
+{"requirements":"solution discussion, recommended solution output","lang":"en"}
+{"requirements":"meeting minutes, key decisions","lang":"en"}
+{"requirements":"product planning, phase goals organization","lang":"en"}
+{"requirements":"sales analysis, data-driven, key point summary","lang":"en"}
+{"requirements":"training explanation, clear structure, step-by-step","lang":"en"}
+{"requirements":"market observation, brief conclusion","lang":"en"}
+{"requirements":"customer analysis, high vs low value segmentation","lang":"en"}
+{"requirements":"project kickoff, goal and responsibility clarification","lang":"en"}
+{"requirements":"leadership presentation, highlight key points, concise","lang":"en"}
+{"requirements":"sales call, deal blocker summary","lang":"en"}
+{"requirements":"solution evaluation, go-or-no-go recommendation","lang":"en"}
+{"requirements":"product discussion, TODO list output","lang":"en"}
+{"requirements":"market research, user feedback summary","lang":"en"}
+{"requirements":"customer call, issue resolution follow-up","lang":"en"}
+{"requirements":"meeting discussion, multiple viewpoints record","lang":"en"}
+{"requirements":"training retrospective, key takeaways","lang":"en"}
+{"requirements":"interview evaluation, hiring recommendation","lang":"en"}
+{"requirements":"sales summary, key metrics output","lang":"en"}
+{"requirements":"solution discussion, risk and return analysis","lang":"en"}
+{"requirements":"project communication, next-step clarification","lang":"en"}
+{"requirements":"customer analysis, action recommendations","lang":"en"}
+{"requirements":"presentation material, structured organization","lang":"en"}
+{"requirements":"general scenario, quick key-point summary","lang":"en"}
+{"requirements":"meeting minutes, Markdown format","lang":"en"}
+{"requirements":"Lösungsbewertung, für Führungskräfte, professioneller Stil, objektiver und seriöser Ton","lang":"de"}
+{"requirements":"Sitzungsprotokoll, Aktionspunkte und Verantwortliche, prägnant, für Kollegen","lang":"de"}
+{"requirements":"Verkaufsgespräch, für Kunden, Analyse von Schmerzpunkten, konversationell aber professionell","lang":"de"}
+{"requirements":"Führungspräsentation, SWOT-Analyse, geschäftlicher Stil, formeller Ton","lang":"de"}
+{"requirements":"Kundenanalyse, für Produktmanager, Prioritätenliste, professioneller Stil","lang":"de"}
+{"requirements":"Marktforschung, für Investoren, Schlussfolgerung zuerst, ruhig und rational","lang":"de"}
+{"requirements":"Schulungsszenario, für Anfänger, erklärender Stil, sanfter Ton","lang":"de"}
+{"requirements":"Interviewbewertung, für Kollegen, STAR-Struktur, objektiver Ton","lang":"de"}
+{"requirements":"Lösungsdiskussion, Risikoidentifikation, professioneller Stil, neutraler Ton","lang":"de"}
+{"requirements":"Unterrichtserklärung, für Studierende, populärwissenschaftlicher Stil, prägnant","lang":"de"}
+{"requirements":"Kundenanruf, Schlüsselinformationen extrahieren, freundlicher Ton, Listenformat","lang":"de"}
+{"requirements":"Anrufprotokoll, TODO-Liste, direkter Ton","lang":"de"}
+{"requirements":"Präsentationsmaterial, für Führungskräfte, allgemeine-spezifische-allgemeine Struktur, formell und professionell","lang":"de"}
+{"requirements":"Marktanalyse, Erkenntnisgewinnung, Nachrichtenstil, objektiv","lang":"de"}
+{"requirements":"Verkaufsrückblick, für Kollegen, Zusammenfassung der Schmerzpunkte, ruhig und rational","lang":"de"}
+{"requirements":"Projektbesprechung, Aufgabenliste ausgeben, prägnanter Stil","lang":"de"}
+{"requirements":"Lösungsbewertung, Entscheidungsabschluss, seriöser Ton","lang":"de"}
+{"requirements":"Kundenanalyse, Anforderungsliste, professionell, neutral","lang":"de"}
+{"requirements":"Produktdiskussion, für Produktmanager, Liste der Schlüsselpunkte","lang":"de"}
+{"requirements":"Schulungszusammenfassung, Handlungsempfehlungen, ermutigender Ton","lang":"de"}
+{"requirements":"Interviewnotizen, Stärken des Kandidaten extrahieren, objektiv und professionell","lang":"de"}
+{"requirements":"Verkaufsgespräch, Nachverfolgung potenzieller Kunden, freundlich und direkt","lang":"de"}
+{"requirements":"Marktforschung, Kernergebnisse ausgeben, Schlussfolgerung zuerst","lang":"de"}
+{"requirements":"Besprechungsdiskussion, Analyse von Meinungsverschiedenheiten, ruhig und rational","lang":"de"}
+{"requirements":"Lösungsvorstellung, für Führungskräfte, geschäftlicher Stil, professionell","lang":"de"}
+{"requirements":"Kundenkommunikationsnotizen, Zusammenfassung der wichtigsten Anfragen","lang":"de"}
+{"requirements":"Projektretrospektive, Lessons Learned, objektiver Ton","lang":"de"}
+{"requirements":"Produktbewertung, Risiken und Empfehlungen","lang":"de"}
+{"requirements":"Schulungsmaterialien, für Ausbilder, klare Struktur","lang":"de"}
+{"requirements":"Marktanalyse, Investorensicht, professionell und rational","lang":"de"}
+{"requirements":"Verkaufsmeeting, nächste Schritte","lang":"de"}
+{"requirements":"Kundenanalyse, Persona-Schlüsselpunkte","lang":"de"}
+{"requirements":"Allgemeines Szenario, Schlüsselinformationen zusammenfassen","lang":"de"}
+{"requirements":"Führungspräsentation, Erkenntnisgewinnung, Schlussfolgerung zuerst","lang":"de"}
+{"requirements":"Lösungsdiskussion, Organisation alternativer Wege","lang":"de"}
+{"requirements":"Marktforschung, Risikoidentifikation","lang":"de"}
+{"requirements":"Kundenanrufnotizen, Listenformat","lang":"de"}
+{"requirements":"Projektstart, Zuweisung der Verantwortlichen","lang":"de"}
+{"requirements":"Produktplanungsdiskussion, professioneller Stil","lang":"de"}
+{"requirements":"Verkaufszusammenfassung, datenbasiert, ruhiger Ton","lang":"de"}
+{"requirements":"Schulungsretrospektive, TODO-Liste","lang":"de"}
+{"requirements":"Interviewbewertung, Einstellungsempfehlung","lang":"de"}
+{"requirements":"Lösungsbewertung, Analyse von Vor- und Nachteilen","lang":"de"}
+{"requirements":"Kundenanalyse, Empfehlungen für nächste Schritte","lang":"de"}
+{"requirements":"Sitzungsprotokoll, prägnant","lang":"de"}
+{"requirements":"Marktbeobachtung, Erkenntnisse ausgeben","lang":"de"}
+{"requirements":"Projektkommunikation, für Kollegen, direkter Ton","lang":"de"}
+{"requirements":"Allgemeine Analyse, strukturierte Zusammenfassung","lang":"de"}
+{"requirements":"Präsentationsmaterial, Markdown-Format","lang":"de"}
+{"requirements":"Lösungsbewertung, für Führungskräfte, Risikopunkte und Alternativen, professionell und seriös","lang":"de"}
+{"requirements":"Verkaufsgespräch, Zusammenfassung von Kunden-Einwänden, freundlich aber direkt","lang":"de"}
+{"requirements":"Besprechungsdiskussion, Entscheidungsabschlüsse und Folgeaktionen","lang":"de"}
+{"requirements":"Kundenanalyse, Marktperspektive, Schlüsselfunktionen extrahieren","lang":"de"}
+{"requirements":"Marktforschung, Stichprobenergebnisse zusammenfassen, objektiv und neutral","lang":"de"}
+{"requirements":"Führungspräsentation, dreiteilige Zusammenfassung, formeller Ton","lang":"de"}
+{"requirements":"Schulungsszenario, Aktionsliste ausgeben, erklärender Stil","lang":"de"}
+{"requirements":"Interviewbewertung, Vergleich von Stärken und Schwächen","lang":"de"}
+{"requirements":"Lösungsdiskussion, für Produktmanager, Analyse machbarer Wege","lang":"de"}
+{"requirements":"Kundenanrufnotizen, Schlüsselinformationen","lang":"de"}
+{"requirements":"Projektmeeting, Organisation von Verantwortlichkeiten und Zeitplan","lang":"de"}
+{"requirements":"Verkaufsretrospektive, Fehleranalyse, ruhig und rational","lang":"de"}
+{"requirements":"Marktanalyse, Trendbewertung","lang":"de"}
+{"requirements":"Präsentationsmaterial, für Führungskräfte, Schlussfolgerung zuerst, professioneller Stil","lang":"de"}
+{"requirements":"Kundenanalyse, Extraktion potenzieller Bedürfnisse","lang":"de"}
+{"requirements":"Produktbewertungsmeeting, Zusammenfassung der Hauptmeinungsverschiedenheiten","lang":"de"}
+{"requirements":"Schulungszusammenfassung, für neue Kollegen, konversationeller Ton","lang":"de"}
+{"requirements":"Verkaufsmeeting, Strategie für nächste Schritte zur Nachverfolgung","lang":"de"}
+{"requirements":"Lösungsbewertung, Vergleich mehrerer Optionen","lang":"de"}
+{"requirements":"Anrufprotokoll, Zusammenfassung der Kundenhaltung","lang":"de"}
+{"requirements":"Marktforschung, Investorensicht, Kernlogik extrahieren","lang":"de"}
+{"requirements":"Projektretrospektive, Verbesserungsbereiche","lang":"de"}
+{"requirements":"Interviewnotizen, Bewertung der Rollenpassung","lang":"de"}
+{"requirements":"Kundenkommunikation, Nachverfolgung von Anforderungsänderungen","lang":"de"}
+{"requirements":"Lösungsdiskussion, Ausgabe der empfohlenen Lösung","lang":"de"}
+{"requirements":"Sitzungsprotokoll, wichtige Entscheidungen","lang":"de"}
+{"requirements":"Produktplanung, Organisationsziele der Phase","lang":"de"}
+{"requirements":"Verkaufsanalyse, datenbasiert, Zusammenfassung der Schlüsselpunkte","lang":"de"}
+{"requirements":"Schulungserklärung, klare Struktur, Schritt-für-Schritt","lang":"de"}
+{"requirements":"Marktbeobachtung, kurze Schlussfolgerung","lang":"de"}
+{"requirements":"Kundenanalyse, Segmentierung nach hohem vs. niedrigem Wert","lang":"de"}
+{"requirements":"Projektstart, Ziel- und Verantwortlichkeitsklärung","lang":"de"}
+{"requirements":"Führungspräsentation, Hervorhebung der Schlüsselpunkte, prägnant","lang":"de"}
+{"requirements":"Verkaufsgespräch, Zusammenfassung von Deal-Blockern","lang":"de"}
+{"requirements":"Lösungsbewertung, Go-or-No-Go-Empfehlung","lang":"de"}
+{"requirements":"Produktdiskussion, Ausgabe der TODO-Liste","lang":"de"}
+{"requirements":"Marktforschung, Zusammenfassung von Nutzerfeedback","lang":"de"}
+{"requirements":"Kundenanruf, Nachverfolgung zur Problemlösung","lang":"de"}
+{"requirements":"Besprechungsdiskussion, Aufzeichnung mehrerer Standpunkte","lang":"de"}
+{"requirements":"Schulungsretrospektive, wichtige Erkenntnisse","lang":"de"}
+{"requirements":"Interviewbewertung, Einstellungsempfehlung","lang":"de"}
+{"requirements":"Verkaufszusammenfassung, Ausgabe der wichtigsten Kennzahlen","lang":"de"}
+{"requirements":"Lösungsdiskussion, Risiko- und Renditeanalyse","lang":"de"}
+{"requirements":"Projektkommunikation, Klärung der nächsten Schritte","lang":"de"}
+{"requirements":"Kundenanalyse, Handlungsempfehlungen","lang":"de"}
+{"requirements":"Präsentationsmaterial, strukturierte Organisation","lang":"de"}
+{"requirements":"Allgemeines Szenario, schnelle Zusammenfassung der Schlüsselpunkte","lang":"de"}
+{"requirements":"Sitzungsprotokoll, Markdown-Format","lang":"de"}
+{"requirements":"ソリューション評価、リーダー向け、プロフェッショナルなスタイル、客観的かつ真剣なトーン","lang":"ja"}
+{"requirements":"議事録、アクションアイテムと担当者、簡潔、同僚向け","lang":"ja"}
+{"requirements":"営業通話、顧客向け、ペインポイント分析、会話的だがプロフェッショナル","lang":"ja"}
+{"requirements":"リーダー向けプレゼンテーション、SWOT分析、ビジネススタイル、フォーマルなトーン","lang":"ja"}
+{"requirements":"顧客分析、プロダクトマネージャー向け、優先順位リスト、プロフェッショナルなスタイル","lang":"ja"}
+{"requirements":"市場調査、投資家向け、結論を先に、冷静かつ合理的","lang":"ja"}
+{"requirements":"トレーニングシナリオ、初心者向け、解説スタイル、優しいトーン","lang":"ja"}
+{"requirements":"面接評価、同僚向け、STAR構造、客観的なトーン","lang":"ja"}
+{"requirements":"ソリューション議論、リスク特定、プロフェッショナルなスタイル、中立的なトーン","lang":"ja"}
+{"requirements":"授業説明、学生向け、科学普及スタイル、簡潔","lang":"ja"}
+{"requirements":"顧客通話、重要情報の抽出、親しみやすいトーン、リスト形式","lang":"ja"}
+{"requirements":"通話ログ、TODOリスト、直接的なトーン","lang":"ja"}
+{"requirements":"プレゼン資料、リーダー向け、全体-詳細-全体の構成、フォーマルでプロフェッショナル","lang":"ja"}
+{"requirements":"市場分析、洞察抽出、ニュース記事スタイル、客観的","lang":"ja"}
+{"requirements":"営業レビュー、同僚向け、ペインポイントのまとめ、冷静かつ合理的","lang":"ja"}
+{"requirements":"プロジェクト会議、タスクリスト出力、簡潔なスタイル","lang":"ja"}
+{"requirements":"ソリューション評価、意思決定の結論、真剣なトーン","lang":"ja"}
+{"requirements":"顧客分析、要件リスト、プロフェッショナル、中立","lang":"ja"}
+{"requirements":"製品ディスカッション、プロダクトマネージャー向け、重要ポイントリスト","lang":"ja"}
+{"requirements":"トレーニングサマリー、アクション推奨、励ましのトーン","lang":"ja"}
+{"requirements":"面接メモ、候補者の強み抽出、客観的かつプロフェッショナル","lang":"ja"}
+{"requirements":"営業通話、潜在顧客へのフォロー、親しみやすく直接的","lang":"ja"}
+{"requirements":"市場調査、主要結果出力、結論を先に","lang":"ja"}
+{"requirements":"会議議論、意見の不一致分析、冷静かつ合理的","lang":"ja"}
+{"requirements":"ソリューションプレゼン、リーダー向け、ビジネススタイル、プロフェッショナル","lang":"ja"}
+{"requirements":"顧客コミュニケーションメモ、重要リクエストのまとめ","lang":"ja"}
+{"requirements":"プロジェクト回顧、学んだ教訓、客観的なトーン","lang":"ja"}
+{"requirements":"製品レビュー、リスクと推奨事項","lang":"ja"}
+{"requirements":"トレーニング教材、講師向け、明確な構造","lang":"ja"}
+{"requirements":"市場分析、投資家視点、プロフェッショナルかつ合理的","lang":"ja"}
+{"requirements":"営業会議、次のステップ","lang":"ja"}
+{"requirements":"顧客分析、ペルソナの重要ポイント","lang":"ja"}
+{"requirements":"一般的なシナリオ、重要情報のまとめ","lang":"ja"}
+{"requirements":"リーダー向けプレゼンテーション、洞察抽出、結論を先に","lang":"ja"}
+{"requirements":"ソリューション議論、代替ルートの整理","lang":"ja"}
+{"requirements":"市場調査、リスク特定","lang":"ja"}
+{"requirements":"顧客通話メモ、リスト形式","lang":"ja"}
+{"requirements":"プロジェクトキックオフ、担当者割り当て","lang":"ja"}
+{"requirements":"製品計画ディスカッション、プロフェッショナルなスタイル","lang":"ja"}
+{"requirements":"営業サマリー、データ駆動、落ち着いたトーン","lang":"ja"}
+{"requirements":"トレーニング回顧、TODOリスト","lang":"ja"}
+{"requirements":"面接評価、採用推奨","lang":"ja"}
+{"requirements":"ソリューション評価、メリット・デメリット分析","lang":"ja"}
+{"requirements":"顧客分析、次のステップの推奨","lang":"ja"}
+{"requirements":"議事録、簡潔","lang":"ja"}
+{"requirements":"市場観察、洞察出力","lang":"ja"}
+{"requirements":"プロジェクトコミュニケーション、同僚向け、直接的なトーン","lang":"ja"}
+{"requirements":"一般分析、構造化されたまとめ","lang":"ja"}
+{"requirements":"プレゼン資料、Markdown形式","lang":"ja"}
+{"requirements":"ソリューション評価、リーダー向け、リスクポイントと代替案、プロフェッショナルかつ真剣","lang":"ja"}
+{"requirements":"営業通話、顧客の反論まとめ、親しみやすく直接的","lang":"ja"}
+{"requirements":"会議議論、意思決定の結論とフォローアップアクション","lang":"ja"}
+{"requirements":"顧客分析、市場視点、主要機能抽出","lang":"ja"}
+{"requirements":"市場調査、サンプル結果まとめ、客観的かつ中立","lang":"ja"}
+{"requirements":"リーダー向けプレゼンテーション、3部構成まとめ、フォーマルなトーン","lang":"ja"}
+{"requirements":"トレーニングシナリオ、アクションリスト出力、解説スタイル","lang":"ja"}
+{"requirements":"面接評価、強みと弱みの比較","lang":"ja"}
+{"requirements":"ソリューション議論、プロダクトマネージャー向け、実行可能なルート分析","lang":"ja"}
+{"requirements":"顧客通話メモ、重要情報ポイント","lang":"ja"}
+{"requirements":"プロジェクト会議、責任とタイムライン整理","lang":"ja"}
+{"requirements":"営業回顧、失敗分析、冷静かつ合理的","lang":"ja"}
+{"requirements":"市場分析、トレンド判断","lang":"ja"}
+{"requirements":"プレゼン資料、リーダー向け、結論を先に、プロフェッショナルスタイル","lang":"ja"}
+{"requirements":"顧客分析、潜在需要抽出","lang":"ja"}
+{"requirements":"製品レビュー会議、主な意見の不一致まとめ","lang":"ja"}
+{"requirements":"トレーニングサマリー、新しい同僚向け、会話的トーン","lang":"ja"}
+{"requirements":"営業会議、次のステップフォロー戦略","lang":"ja"}
+{"requirements":"ソリューション評価、複数オプションの比較","lang":"ja"}
+{"requirements":"通話ログ、顧客の態度まとめ","lang":"ja"}
+{"requirements":"市場調査、投資家視点、核心ロジック抽出","lang":"ja"}
+{"requirements":"プロジェクト回顧、改善ポイント","lang":"ja"}
+{"requirements":"面接メモ、役割適合評価","lang":"ja"}
+{"requirements":"顧客コミュニケーション、要件変更の追跡","lang":"ja"}
+{"requirements":"ソリューション議論、推奨ソリューション出力","lang":"ja"}
+{"requirements":"議事録、重要決定","lang":"ja"}
+{"requirements":"製品計画、フェーズ目標整理","lang":"ja"}
+{"requirements":"営業分析、データ駆動、重要ポイントまとめ","lang":"ja"}
+{"requirements":"トレーニング説明、明確な構造、ステップバイステップ","lang":"ja"}
+{"requirements":"市場観察、簡潔な結論","lang":"ja"}
+{"requirements":"顧客分析、高価値 vs 低価値セグメント","lang":"ja"}
+{"requirements":"プロジェクトキックオフ、目標と責任の明確化","lang":"ja"}
+{"requirements":"リーダー向けプレゼンテーション、主要ポイント強調、簡潔","lang":"ja"}
+{"requirements":"営業通話、ディールブロッカーまとめ","lang":"ja"}
+{"requirements":"ソリューション評価、Go-or-No-Go推奨","lang":"ja"}
+{"requirements":"製品ディスカッション、TODOリスト出力","lang":"ja"}
+{"requirements":"市場調査、ユーザーフィードバックまとめ","lang":"ja"}
+{"requirements":"顧客通話、問題解決フォローアップ","lang":"ja"}
+{"requirements":"会議議論、複数の視点記録","lang":"ja"}
+{"requirements":"トレーニング回顧、主要学び","lang":"ja"}
+{"requirements":"面接評価、採用推奨","lang":"ja"}
+{"requirements":"営業サマリー、主要指標出力","lang":"ja"}
+{"requirements":"ソリューション議論、リスクとリターン分析","lang":"ja"}
+{"requirements":"プロジェクトコミュニケーション、次のステップの明確化","lang":"ja"}
+{"requirements":"顧客分析、アクション推奨","lang":"ja"}
+{"requirements":"プレゼン資料、構造化された整理","lang":"ja"}
+{"requirements":"一般的なシナリオ、迅速な重要ポイントまとめ","lang":"ja"}
+{"requirements":"議事録、Markdown形式","lang":"ja"}
