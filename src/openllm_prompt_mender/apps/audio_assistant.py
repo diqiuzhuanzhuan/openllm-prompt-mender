@@ -218,6 +218,7 @@ async def render_ui(message: cl.Message):
     voice_memo_app = VoiceMemoApp()
     voice_memo_app.load("audio_assistant.json")
     pred = voice_memo_app(requirements=message.content)
+    print(pred.template)
     await cl.Message(
         content=pred.template,
         actions=[
