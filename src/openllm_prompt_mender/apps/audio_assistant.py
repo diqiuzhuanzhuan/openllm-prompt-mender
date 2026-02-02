@@ -25,6 +25,8 @@ import os
 from openllm_prompt_mender.utils.data_utils import load_trainset
 from dotenv import load_dotenv
 import chainlit as cl
+from ollama import Client
+client = Client(host='http://localhost:11434')
 
 load_dotenv()
 
@@ -71,6 +73,7 @@ class AssessTemplateQuality(dspy.Signature):
     3. Flexibility for modification and extension.
     4. Alignment with the user's requirements, intended scenario, audience, and style.
     5. Match the output language to the requirements unless a specific language is requested.
+    6. At least two levels of hierarchy.
     """
 
     # -------------------- Input Fields --------------------
@@ -89,6 +92,11 @@ class AssessTemplateQuality(dspy.Signature):
 
     tone_score: float = dspy.OutputField(
         desc="Score (0.0–1.0) evaluating how well the template's tone matches the intended style or voice.",
+        type_=float
+    )
+
+    hierarchy_score: float = dspy.OutputField(
+        desc="Score (0.0–1.0) assessing the logical structure and hierarchy of the template. It must have at least two levels of hierarchy.",
         type_=float
     )
 
@@ -127,7 +135,7 @@ class AssessTemplateQuality(dspy.Signature):
         type_=str
     )
 
-main_lm = dspy.LM(model="ollama/Qwen3-4B-2507-RL-global-20-0114-fp16", max_tokens=10240)
+main_lm = dspy.LM(model="ollama/Qwen3-4B-2507-RL-global-285-0123-fp16", max_tokens=10240)
 dspy.configure(lm=main_lm)
 judge_lm = dspy.LM(model="openai/gpt-5-mini")
 judge = dspy.ChainOfThought(AssessTemplateQuality)
@@ -150,11 +158,12 @@ def llm_judge_metric(example, pred, trace=None):
     total_score = (
         assessment.general_score +
         assessment.tone_score +
+        assessment.hierarchy_score +
         assessment.scenario_alignment_score +
         assessment.audience_match_score +
         assessment.language_consistency_score + 
         assessment.language_appropriateness_score
-    ) / 6.0
+    ) / 7.0
     
     # Return a Prediction object which can include both the numeric score and feedback [4]
     # Feedback is crucial for optimizers like GEPA to understand how to improve the program [6, 7]
@@ -184,7 +193,7 @@ def main():
     for message in dspy.clients.base_lm.GLOBAL_HISTORY[-1]["messages"]:
         pprint.pprint(message)
     pprint.pprint("#"*300)
-    compiled_program.save("audio_assistant.json")
+    compiled_program.save("audio_assistant_20260128.json")
 
     while True:
         requirements = input("Enter your requirements: ")
@@ -201,6 +210,57 @@ if __name__ == "__main__":
 
 import chainlit as cl
 
+import asyncio
+
+class TokenStreamExtractor:
+    """Streaming extractor that yields content between template markers as soon as it is safe to emit."""
+
+    def __init__(self):
+        self.state = "WAIT_START"
+        self.start_marker = "[[ ## template ## ]]"
+        self.end_marker = "[[ ## completed ## ]]"
+        self.partial = ""
+
+    def _maybe_emit_safe(self, pending: str, marker_len: int):
+        """Split pending text into (safe_to_emit, remainder)."""
+        keep = max(marker_len - 1, 0)
+        if keep == 0:
+            return pending, ""
+        if len(pending) <= keep:
+            return "", pending
+        split_index = len(pending) - keep
+        return pending[:split_index], pending[split_index:]
+
+    def feed(self, chunk: str):
+        """接受一段流式文本，返回可立即输出的段落列表。"""
+        if not chunk:
+            return []
+
+        outputs = []
+        self.partial += chunk
+
+        while self.partial:
+            if self.state == "WAIT_START":
+                idx = self.partial.find(self.start_marker)
+                if idx == -1:
+                    _, self.partial = self._maybe_emit_safe(self.partial, len(self.start_marker))
+                    break
+                self.partial = self.partial[idx + len(self.start_marker):]
+                self.state = "COLLECTING"
+            else:  # COLLECTING
+                idx = self.partial.find(self.end_marker)
+                if idx == -1:
+                    safe, self.partial = self._maybe_emit_safe(self.partial, len(self.end_marker))
+                    if safe:
+                        outputs.append(safe)
+                    break
+                if idx > 0:
+                    outputs.append(self.partial[:idx])
+                self.partial = self.partial[idx + len(self.end_marker):]
+                self.state = "WAIT_START"
+        return outputs
+
+
 def dump_prompt():
     import pprint
     pprint.pprint("prompt: " + "#"*300)
@@ -209,16 +269,38 @@ def dump_prompt():
     pprint.pprint("#"*300)
     return messages
 
+with open("20260123.prompt.json", "r") as f:
+    import json
+    messages = json.load(f)
+flag_content = messages[-1]["content"]
+
 @cl.on_message
 async def render_ui(message: cl.Message):
     if message.content == "<dump_prompt>":
         await cl.Message(
             content=dump_prompt()).send
         return
+    #flag_content = "[[ ## requirements ## ]]\n{content}\n\nRespond with the corresponding output fields, starting with the field `[[ ## template ## ]]`, and then ending with the marker for `[[ ## completed ## ]]`."
+    flag_content = "[[ ## requirements ## ]]\n{content}\n\nRespond with the corresponding output field"
+    messages[-1]["content"] = flag_content.replace("{content}", message.content)
+    model_name = "Qwen3-4B-2507-RL-global-285-0123-fp16"
+    response =  client.chat(model=model_name, messages=messages, stream=True)
+    stream_msg = cl.Message(content="")
+    await stream_msg.send()
+    extractor = TokenStreamExtractor()
+    for chunk in response:
+        chunk_text = chunk.message.get("content", "") if chunk.message else ""
+        for segment in extractor.feed(chunk_text):
+            print(segment, flush=True, end='')
+            if segment:
+                await stream_msg.stream_token(segment)
+    await stream_msg.update()
+
     voice_memo_app = VoiceMemoApp()
+
     voice_memo_app.load("audio_assistant.json")
     pred = voice_memo_app(requirements=message.content)
-    print(pred.template)
+    #print(pred.template)
     await cl.Message(
         content=pred.template,
         actions=[

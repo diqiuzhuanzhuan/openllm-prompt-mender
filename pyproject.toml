@@ -20,6 +20,7 @@ dependencies = [
   "dspy>=3.0.4",
   "google-cse>=0.1.2",
   "gradio>=6.3.0",
+  "ollama>=0.6.1",
   "typer",
 ]
 requires-python = ">= 3.12"
