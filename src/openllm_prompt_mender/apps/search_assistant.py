@@ -9,9 +9,6 @@
 # copies of the Software, and to permit persons to whom the Software is
 # furnished to do so, subject to the following conditions:
 #
-# The above copyright notice and this permission notice shall be included in all
-# copies or substantial portions of the Software.
-#
 # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 # IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 # FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -20,24 +17,27 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+from __future__ import annotations
+
+import os
+import random
+from collections.abc import Iterable
+from typing import Any
+
 import dspy
-from typing import List
 from dotenv import load_dotenv
 from google_cse import GoogleCSE
-import random
-import os
-from datasets import load_dataset
-from openllm_prompt_mender.utils.data_utils import load_trainset, save_trainset
-
 
 load_dotenv()
 
+
 class WebRAGWithCitations(dspy.Signature):
     """
-    Answer the question based on the provided web snippets. 
+    Answer the question based on the provided web snippets.
+
     Requirements:
     1. The answer's language and punctuation must strictly match the language used in the user's question.
-    2. Cite the source using [[id]] format for every claim (e.g., [[3]], [[4]]). 
+    2. Cite the source using [[id]] format for every claim, for example [[3]], [[4]].
     3. The id corresponds to the number in the provided context.
     """
 
@@ -46,150 +46,112 @@ class WebRAGWithCitations(dspy.Signature):
     answer = dspy.OutputField(desc="Summarized response matching the input language with mandatory [[id]] citations.")
 
 
+class GoogleRAG(dspy.Module):
+    """Generate cited answers from already-retrieved web snippets."""
 
-class GoogleRAg(dspy.Module):
-    def __init__(self, callbacks=None):
-        """Initialize the SearchAssistant class.
-
-        Args:
-            callbacks (optional): Callback functions to be used during the execution.
-                Defaults to None.
-
-        Sets up:
-            retrieve: A dspy.Retrieve component configured to retrieve 10 items.
-            generate_answer: A dspy.ChainOfThought component using WebRAGWithCitations
-                for generating answers with citations.
-        """
+    def __init__(self, callbacks: Any | None = None):
         super().__init__(callbacks)
         self.generate_answer = dspy.ChainOfThought(WebRAGWithCitations)
 
-
-    def forward(self, question, context):
-        """Process a question by retrieving relevant context and generating an answer.
-
-        Args:
-            question (str): The input question to be processed.
-
-        Returns:
-            dspy.Prediction: A prediction object containing:
-                - context (list): The retrieved context passages relevant to the question.
-                - answer (str): The generated answer to the question based on the context.
-        """
+    def forward(self, question: str, context: str) -> dspy.Prediction:
         prediction = self.generate_answer(context=context, question=question)
         return dspy.Prediction(context=context, answer=prediction.answer)
-   
-  
+
+
+# Backward-compatible alias for the old misspelled class name.
+GoogleRAg = GoogleRAG
+
 
 class AssessQuality(dspy.Signature):
     """
-    Evaluate the quality of a generated answer based on three key requirements:
-    1. Groundedness: The answer must be derived solely from the provided context.
-    2. Language Consistency: The language and punctuation must strictly match the user's question.
-    3. Citation Accuracy: Every claim must include correct [[id]] markers corresponding to the context.
+    Evaluate generated answer quality.
+
+    Criteria:
+    1. Groundedness: the answer must be derived solely from the provided context.
+    2. Language consistency: language and punctuation must match the user's question.
+    3. Citation accuracy: every claim must include correct [[id]] markers.
     """
+
     context = dspy.InputField(desc="Retrieved background snippets in numbered format")
     question = dspy.InputField(desc="The original query that defines the required language and topic")
     answer = dspy.InputField(desc="The generated response to be assessed")
-    
-    # Evaluation outcomes
-    is_grounded = dspy.OutputField(desc="Rate the answer on a scale from 0 to 1 according to its degree of alignment with the query", type_=float)
+
+    is_grounded = dspy.OutputField(
+        desc="Rate the answer on a scale from 0 to 1 according to its degree of alignment with the query",
+        type_=float,
+    )
     language_match = dspy.OutputField(desc="Boolean indicating if the output language aligns with the question", type_=bool)
     citation_correct = dspy.OutputField(desc="Boolean indicating if [[id]] tags are present and accurate", type_=bool)
-    rationale = dspy.OutputField(desc="Textual explanation for the given assessment scores") 
-
-judge = dspy.ChainOfThought(AssessQuality)
-
-main_lm = dspy.LM('openai/gpt-4.1-mini')
-judge_lm = dspy.LM('openai/gpt-4o')
-dspy.configure(lm=main_lm)
+    rationale = dspy.OutputField(desc="Textual explanation for the given assessment scores")
 
 
-def llm_judge_metric(example, pred, trace=None):
-    with dspy.context(lm=judge_lm):
-        # Execute the judge module with the context, question, and predicted answer
-        assessment = judge(
-            context=example.context, 
-            question=example.question, 
-            answer=pred.answer
-        )
-        if assessment.language_match != "True":
-            print("question: ", example.question)
-            print("answer: ", pred.answer)
-        
-    # Calculate the average score from the boolean criteria [4, 5]
-    # Each True counts as 1.0, False counts as 0.0
-    total_score = (
-        float(assessment.is_grounded) + 
-        float(bool(assessment.language_match) == 'True') + 
-        float(bool(assessment.citation_correct) == 'True')
-    ) / 3.0
-    
-    # Return a Prediction object which can include both the numeric score and feedback [4]
-    # Feedback is crucial for optimizers like GEPA to understand how to improve the program [6, 7]
-    return dspy.Prediction(
-        score=total_score, 
-        feedback=assessment.rationale
-    )
+def configure_lm(main_model: str = "openai/gpt-4.1-mini") -> dspy.LM:
+    """Configure the default DSPy LM for this app and return it."""
+    main_lm = dspy.LM(main_model)
+    dspy.configure(lm=main_lm)
+    return main_lm
 
-from dspy.teleprompt import MIPROv2
 
-tp = MIPROv2(
-    metric=llm_judge_metric, 
-    auto="light",  # auto can be set as light, medium, heavy
-    prompt_model=judge_lm, 
-    teacher_settings=dict(lm=judge_lm)
-)
+def make_judge(judge_model: str = "openai/gpt-4o") -> tuple[dspy.LM, dspy.Module]:
+    judge_lm = dspy.LM(judge_model)
+    return judge_lm, dspy.ChainOfThought(AssessQuality)
 
-    
-def build_trainset(queries: List[str]):
+
+def _as_bool(value: Any) -> bool:
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, str):
+        return value.strip().lower() in {"true", "1", "yes"}
+    return bool(value)
+
+
+def build_llm_judge_metric(judge_lm: dspy.LM | None = None, judge: dspy.Module | None = None):
+    """Create a metric callable suitable for DSPy optimizers."""
+    if judge_lm is None or judge is None:
+        judge_lm, judge = make_judge()
+
+    def llm_judge_metric(example, pred, trace=None):
+        with dspy.context(lm=judge_lm):
+            assessment = judge(context=example.context, question=example.question, answer=pred.answer)
+
+        total_score = (
+            float(assessment.is_grounded)
+            + float(_as_bool(assessment.language_match))
+            + float(_as_bool(assessment.citation_correct))
+        ) / 3.0
+
+        return dspy.Prediction(score=total_score, feedback=assessment.rationale)
+
+    return llm_judge_metric
+
+
+def build_trainset(queries: Iterable[str], min_results: int = 1, max_results: int = 10) -> list[dspy.Example]:
+    """Build a DSPy trainset by retrieving snippets from Google CSE."""
+    api_key = os.environ.get("GOOGLE_CSE_API_KEY")
+    search_engine_id = os.environ.get("GOOGLE_CSE_CX")
+    if not api_key or not search_engine_id:
+        msg = "GOOGLE_CSE_API_KEY and GOOGLE_CSE_CX must be set to build a search trainset."
+        raise RuntimeError(msg)
+
+    google_client = GoogleCSE(api_key=api_key, search_engine_id=search_engine_id)
     trainset = []
-    # must set GOOGLE_CSE_API_KEY and GOOGLE_CSE_CX in .env
-    assert os.environ["GOOGLE_CSE_API_KEY"] is not None
-    google_client = GoogleCSE(
-        api_key=os.environ["GOOGLE_CSE_API_KEY"],
-        search_engine_id=os.environ["GOOGLE_CSE_CX"],
-    )
-    
-    for i in range(len(queries)):
-        n = random.randint(1, 10)
-        question = queries[i]
-        try:
-            search_results = google_client.web_search(question, num_results=n)
-        except Exception as e:
-            print(e)
-            break
-        context = "\n".join([f"{i + 1}. {result.snippet}" for i, result in enumerate(search_results)])
+
+    for question in queries:
+        num_results = random.randint(min_results, max_results)
+        search_results = google_client.web_search(question, num_results=num_results)
+        context = "\n".join(f"{idx + 1}. {result.snippet}" for idx, result in enumerate(search_results))
         trainset.append(dspy.Example(question=question, context=context).with_inputs("question", "context"))
+
     return trainset
 
 
-def load_queries(file_path: str):
-    with open(file_path, "r") as f:
-        queryies = f.readlines()
-    return queryies
+def answer(question: str, context: str, model: str = "openai/gpt-4.1-mini") -> dspy.Prediction:
+    """Convenience entry point for direct, unoptimized inference."""
+    configure_lm(model)
+    return GoogleRAG()(question=question, context=context)
 
 
-dataset = load_dataset(
-    "json",
-    data_files="data/queries.jsonl",
-    split="train"
-)
-print(dataset["query"])
-if os.path.exists("data/trainset.jsonl"):
-    trainset = load_trainset("data/trainset.jsonl")
-else: 
-    trainset = build_trainset(list(dataset["query"]))
-    save_trainset(trainset, "data/trainset.jsonl")
-
-
-compiled_program = tp.compile(GoogleRAg(), trainset=trainset)
-
-pred = compiled_program(
-    question=trainset[45].question,
-    context=trainset[45].context
-)
-import pprint
-pprint.pprint(pred.answer)
-pprint.pprint("#"*300)
-for message in dspy.clients.base_lm.GLOBAL_HISTORY[-1]["messages"]:
-    pprint.pprint(message)
+if __name__ == "__main__":
+    sample_question = os.environ.get("PROMPT_MENDER_SAMPLE_QUESTION", "What is DSPy?")
+    sample_context = os.environ.get("PROMPT_MENDER_SAMPLE_CONTEXT", "1. DSPy is a framework for programming LM pipelines.")
+    print(answer(sample_question, sample_context).answer)
