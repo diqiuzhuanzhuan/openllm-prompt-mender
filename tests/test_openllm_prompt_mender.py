@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+# Copyright (c) 2025 Loong Ma
+# SPDX-License-Identifier: MIT
+
 import pytest
 
 """Tests for `openllm_prompt_mender` package."""

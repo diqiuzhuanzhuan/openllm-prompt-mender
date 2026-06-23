@@ -1,3 +1,6 @@
+# Copyright (c) 2025 Loong Ma
+# SPDX-License-Identifier: MIT
+
 """Console script for openllm_prompt_mender."""
 
 import typer

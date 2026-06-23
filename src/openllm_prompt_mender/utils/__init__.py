@@ -1,3 +1,6 @@
+# Copyright (c) 2025 Loong Ma
+# SPDX-License-Identifier: MIT
+
 # MIT License
 #
 # Copyright (c) 2025 LoongMa

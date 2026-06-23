@@ -1,3 +1,6 @@
+# Copyright (c) 2025 Loong Ma
+# SPDX-License-Identifier: MIT
+
 from __future__ import annotations
 
 from pathlib import Path

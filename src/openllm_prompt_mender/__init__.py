@@ -1,3 +1,6 @@
+# Copyright (c) 2025 Loong Ma
+# SPDX-License-Identifier: MIT
+
 """Top-level package for OpenLLM Prompt Mender."""
 
 __author__ = """Loong Ma"""
